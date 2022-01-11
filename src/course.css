@@ -1,0 +1,196 @@
+body {
+    background: #f7f7f7 !important;
+}
+
+#mynavi {
+    background: #263238 !important;
+    height: 45px !important;
+    margin-bottom: 10px !important;
+}
+
+.mynavi-button-a {
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff !important;
+}
+
+.mynavi-button-home, .mynavi-button-course, .mynavi-button-portfolio {
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 42px !important;
+    width: 110px !important;
+    background: transparent !important;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    border-bottom-width: 3px;
+    top: -3px !important;
+    margin-bottom: 3px !important;
+}
+
+.mynavi-button-home:hover, .mynavi-button-course:hover, .mynavi-button-portfolio:hover {
+    border-bottom-color: #1de9b6;
+}
+
+.mylang-ja, .mylang-en {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 45px !important;
+    width: 80px !important;
+}
+
+.mylang-ja a, .mylang-en a, #header #mylang a {
+    color: #ffffff !important;
+    background: transparent !important;
+}
+
+.pagebody {
+    border: none !important;
+    padding: 0 !important;
+}
+
+.contentbody-left {
+    padding: 0 !important;
+    padding-right: 5px !important;
+}
+
+.contentbody-right {
+    padding: 0 !important;
+    padding-left: 5px !important;
+}
+
+.memo0 {
+    padding: 12px !important;
+    background: #c8e6c9 !important;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    border: #97b498 solid 1px !important;
+}
+
+.alertlist {
+    padding: 12px !important;
+    background: #ffcdd2 !important;
+    margin-bottom: 10px !important;
+    border: #cb9ca1 solid 1px;
+}
+
+.alertlist a, .alertlist span.unread {
+    color: #ffffff !important;
+    font-weight: normal !important;
+}
+
+.alertlist div {
+    margin: 0px 20px 0px 15px !important;
+}
+
+.my-infolist {
+    padding: 12px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    background: #ffffff !important;
+    margin-bottom: 10px !important;
+    border: #e0e0e0 solid 1px;
+}
+
+.my-infolist-header {
+    background: #ffffff !important;
+    padding: 0 !important;
+}
+
+.my-infolist-header h2 {
+    color: #546e7a !important;
+    font-size: 1.8em !important;
+    font-weight: normal !important;
+    padding: 0 !important;
+    padding-bottom: 12px !important;
+}
+
+.my-infolist-body {
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 12px !important;
+    border: none !important;
+}
+
+.my-infolist-event {
+    width: 218px !important;
+}
+
+.my-infolist-submitlog h3, .my-infolist-tips .tips-list h3 {
+    background: none !important;
+    color: #519657 !important;
+    font-weight: normal !important;
+    padding: 0 !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.my-infolist-event .showmore {
+    border: none !important;
+}
+
+.my-infolist-tips {
+    width: 218px !important;
+}
+
+.my-infolist-tips .my-infolist-header {
+    height: 0 !important;
+    border: none !important;
+}
+
+.my-infolist-tips .my-infolist-body {
+    margin-top: 0 !important;
+}
+
+table tr {
+    border: none !important;
+}
+
+table td {
+    background: #e8f5e9;
+}
+table tr:nth-child(odd) td {
+    background: #fff;
+}
+
+table.stdlist {
+    width: 100% !important;
+    border: none !important;
+}
+
+table.stdlist tr.title th {
+    color: #519657 !important;
+    font-weight: normal; !important;
+    background-color: #ffffff !important;
+    border: none !important;
+}
+
+table.stdlist tr td {
+    border-color: #bcbcbc !important;
+    border-style: dotted !important;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+ul.infolist-tab {
+    margin: 0 !important;
+    margin-top: -25px !important;
+    border: none !important;
+}
+
+ul.infolist-tab a {
+    margin: 5px !important;
+    padding: 0 !important;
+    border: none !important;
+    text-align: center !important;
+    color: #9e9e9e !important;
+}
+
+ul.infolist-tab li.current a {
+    color: #519657 !important;
+    background: none !important;
+}
