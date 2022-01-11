@@ -13,6 +13,7 @@
     ],
     "css": [
       "course.css"
-    ]
+    ],
+    "run_at": "document_start"
   }]
 }

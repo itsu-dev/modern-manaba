@@ -1,3 +1,5 @@
+document.documentElement.style.visibility = 'hidden';
+
 window.onload = () => {
     let mynaviButtonHome = document.getElementsByClassName("mynavi-button-home")[0];
     mynaviButtonHome.innerHTML = '<a href="home" class="mynavi-button-a">マイページ</a>';
@@ -17,9 +19,13 @@ window.onload = () => {
             '<a href="home_library_reminder" class="mynavi-button-a">リマインダ</a>' +
         '</div>';
 
+    document.documentElement.style.visibility = '';
+
     let mylangJa = document.getElementsByClassName("mylang-ja")[0]
     mylangJa.innerHTML = '<a href="home_lang_en" class="mynavi-button-a">English</a>';
 
     document.getElementsByClassName("align")[0].remove();
-    document.getElementsByClassName("pageheader-course")[0].remove();
+    if (document.getElementsByClassName("pageheader-course").length) {
+        document.getElementsByClassName("pageheader-course")[0].remove();
+    }
 }
