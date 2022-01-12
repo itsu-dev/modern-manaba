@@ -1,7 +1,13 @@
 #mynavi {
     background: #263238 !important;
     height: 45px !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 16px !important;
+    box-shadow: 0px 2px 4px;
+    width: 100% !important;
+}
+
+#mynavi, #container, #header, #orgheader {
+    width: 100% !important;
 }
 
 .mynavi-button-a {
