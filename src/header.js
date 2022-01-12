@@ -51,8 +51,38 @@ window.onload = () => {
     mynavi.appendChild(div1);
     mynavi.appendChild(div2);
 
+    let english = document.createElement('span');
+    english.classList.add('mynavi-button-a');
+    english.innerHTML = 'English';
+
     let mylangJa = document.getElementsByClassName("mylang-ja")[0]
-    mylangJa.innerHTML = '<a href="home_lang_en" class="mynavi-button-a">English</a>';
+    mylangJa.innerHTML = '';
+    mylangJa.setAttribute('onclick', "window.location.href = 'home_lang_en';")
+    mylangJa.appendChild(english);
+
+    let memo = document.createElement('span');
+    memo.classList.add('mynavi-button-a');
+    memo.innerHTML = 'メモ一覧';
+
+    let memoDiv = document.createElement('div')
+    memoDiv.classList.add('memo-div')
+    memoDiv.setAttribute('onclick', "window.location.href = 'home_usermemo';")
+    memoDiv.appendChild(memo);
+
+    let respon = document.createElement('img');
+    respon.classList.add('mynavi-button-a');
+    respon.setAttribute('src', '/respon8.png');
+    respon.setAttribute('target', '_blank');
+
+    let responDiv = document.createElement('div')
+    responDiv.classList.add('respon-div')
+    responDiv.setAttribute('onclick', "window.location.href = 'https://atmnb.tsukuba.ac.jp/attend/tsukuba?relogin=1';")
+    responDiv.appendChild(respon);
+
+    let mybuttonMenu = document.getElementById('mybutton-menu');
+    mybuttonMenu.innerHTML = '';
+    mybuttonMenu.appendChild(responDiv);
+    mybuttonMenu.appendChild(memoDiv);
 
     document.getElementsByClassName("align")[0].remove();
 
@@ -61,4 +91,6 @@ window.onload = () => {
     if (document.getElementsByClassName("pageheader-course").length) {
         document.getElementsByClassName("pageheader-course")[0].remove();
     }
+
+    document.getElementById("mylinks")
 }

@@ -10,7 +10,7 @@
     color: #ffffff !important;
 }
 
-.mynavi-button-home, .mynavi-button-course, .mynavi-button-portfolio {
+.mynavi-button-home, .mynavi-button-course, .mynavi-button-portfolio, .mylang-ja, .mylang-en, .memo-div, .respon-div {
     padding: 0 !important;
     display: flex;
     justify-content: center;
@@ -27,20 +27,40 @@
     cursor: pointer;
 }
 
-.mynavi-button-home:hover, .mynavi-button-course:hover, .mynavi-button-portfolio:hover {
-    border-bottom-color: #26a69a;
+.mynavi-button-home:hover, .mynavi-button-course:hover, .mynavi-button-portfolio:hover, .mylang-ja:hover, .mylang-en:hover, .memo-div:hover, .respon-div:hover {
+    border-bottom-color: #66bb6a;
 }
 
 .mylang-ja, .mylang-en {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 45px !important;
+    width: 80px !important;
+    right: 0px !important;
+    top: 70px !important;
+}
+
+.memo-div, .respon-div {
     width: 80px !important;
 }
 
-.mylang-ja a, .mylang-en a, #header #mylang a {
+.respon-div {
+    position: absolute !important;
+    right: 80px !important;
+    top: 0 !important;
+}
+
+.respon-div img {
+    width: 70px !important;
+}
+
+#header #mybutton-menu {
+    right: 80px !important;
+    top: 70px !important;
+    display: flex;
+}
+
+.mylang-ja span, .mylang-en span, #header #mylang span, .memo-div span, .respon-div span {
     color: #ffffff !important;
-    background: transparent !important;
+    background: none !important;
+    text-indent: unset !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }

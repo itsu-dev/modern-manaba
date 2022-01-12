@@ -19,17 +19,17 @@ body {
 
 .memo0 {
     padding: 12px !important;
-    background: #c8e6c9 !important;
+    background: #fff9c4 !important;
     margin-bottom: 10px !important;
     margin-top: 10px !important;
-    border: #97b498 solid 1px !important;
+    border: #cbc693 solid 1px !important;
 }
 
 .alertlist {
     padding: 12px !important;
-    background: #ffcdd2 !important;
+    background: #f8bbd0 !important;
     margin-bottom: 10px !important;
-    border: #cb9ca1 solid 1px;
+    border: #c48b9f solid 1px;
 }
 
 .alertlist a, .alertlist span.unread {
@@ -56,7 +56,7 @@ body {
 }
 
 .my-infolist-header h2 {
-    color: #546e7a !important;
+    color: #1b5e20 !important;
     font-size: 1.8em !important;
     font-weight: normal !important;
     padding: 0 !important;
@@ -76,7 +76,7 @@ body {
 
 .my-infolist-submitlog h3, .my-infolist-tips .tips-list h3 {
     background: none !important;
-    color: #519657 !important;
+    color: #388e3c !important;
     font-weight: normal !important;
     padding: 0 !important;
     padding-top: 5px !important;
@@ -107,6 +107,7 @@ table tr {
 table td {
     background: #e8f5e9;
 }
+
 table tr:nth-child(odd) td {
     background: #fff;
 }
@@ -117,7 +118,7 @@ table.stdlist {
 }
 
 table.stdlist tr.title th {
-    color: #519657 !important;
+    color: #388e3c !important;
     font-weight: normal; !important;
     background-color: #ffffff !important;
     border: none !important;
@@ -145,6 +146,6 @@ ul.infolist-tab a {
 }
 
 ul.infolist-tab li.current a {
-    color: #519657 !important;
+    color: #2e7d32 !important;
     background: none !important;
 }

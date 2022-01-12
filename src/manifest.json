@@ -8,6 +8,9 @@
       "matches": [
         "https://manaba.tsukuba.ac.jp/ct/*"
       ],
+      "exclude_matches": [
+        "https://manaba.tsukuba.ac.jp/ct/usermemo_*"
+      ],
       "js": [
         "header.js"
       ],
