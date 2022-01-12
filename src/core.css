@@ -2,52 +2,6 @@ body {
     background: #f7f7f7 !important;
 }
 
-#mynavi {
-    background: #263238 !important;
-    height: 45px !important;
-    margin-bottom: 10px !important;
-}
-
-.mynavi-button-a {
-    margin-left: auto;
-    margin-right: auto;
-    color: #ffffff !important;
-}
-
-.mynavi-button-home, .mynavi-button-course, .mynavi-button-portfolio {
-    padding: 0 !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 42px !important;
-    width: 110px !important;
-    background: transparent !important;
-    border-bottom-style: solid;
-    border-bottom-color: transparent;
-    border-bottom-width: 3px;
-    top: -3px !important;
-    margin-bottom: 3px !important;
-}
-
-.mynavi-button-home:hover, .mynavi-button-course:hover, .mynavi-button-portfolio:hover {
-    border-bottom-color: #1de9b6;
-}
-
-.mylang-ja, .mylang-en {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 45px !important;
-    width: 80px !important;
-}
-
-.mylang-ja a, .mylang-en a, #header #mylang a {
-    color: #ffffff !important;
-    background: transparent !important;
-}
-
 .pagebody {
     border: none !important;
     padding: 0 !important;

@@ -3,17 +3,28 @@
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "Make your manaba modern.",
-  "content_scripts": [{
-    "matches": [
-      "https://manaba.tsukuba.ac.jp/ct/course_*",
-      "https://manaba.tsukuba.ac.jp/ct/home*"
-    ],
-    "js": [
-      "content.js"
-    ],
-    "css": [
-      "course.css"
-    ],
-    "run_at": "document_start"
-  }]
+  "content_scripts": [
+    {
+      "matches": [
+        "https://manaba.tsukuba.ac.jp/ct/*"
+      ],
+      "js": [
+        "header.js"
+      ],
+      "css": [
+        "header.css"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://manaba.tsukuba.ac.jp/ct/course_*",
+        "https://manaba.tsukuba.ac.jp/ct/home*"
+      ],
+      "css": [
+        "core.css"
+      ],
+      "run_at": "document_start"
+    }
+  ]
 }
