@@ -1,35 +1,52 @@
 body {
-    background: #f7f7f7 !important;
+    background: #F4F5F7 !important;
+}
+
+.pagebody, .home {
+    width: 100% !important;
+}
+
+.my-course {
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+.my-course::after {
+    content: "";			/* 空のコンテンツを作成 */
+    display: block;		/* 空のコンテンツをブロックボックスにする */
+    clear: both;			/* 回り込みの解除 */
 }
 
 .pagebody {
     border: none !important;
+    margin: 0 !important;
     padding: 0 !important;
 }
 
 .contentbody-left {
+    width: 70% !important;
     padding: 0 !important;
-    padding-right: 5px !important;
 }
 
 .contentbody-right {
+    width: 30% !important;
     padding: 0 !important;
-    padding-left: 5px !important;
 }
 
 .memo0 {
     padding: 12px !important;
     background: #fff9c4 !important;
-    margin-bottom: 10px !important;
-    margin-top: 10px !important;
     border: #cbc693 solid 1px !important;
+    box-shadow: 2px 2px 4px #bdbdbd;
+    margin: 16px !important;
 }
 
 .alertlist {
     padding: 12px !important;
     background: #f8bbd0 !important;
-    margin-bottom: 10px !important;
     border: #c48b9f solid 1px;
+    box-shadow: 2px 2px 4px #bdbdbd;
+    margin: 0 16px 16px !important;
 }
 
 .alertlist a, .alertlist span.unread {
@@ -46,8 +63,9 @@ body {
     padding-left: 16px !important;
     padding-right: 16px !important;
     background: #ffffff !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 16px !important;
     border: #e0e0e0 solid 1px;
+    box-shadow: 2px 2px 4px #bdbdbd;
 }
 
 .my-infolist-header {
@@ -70,8 +88,19 @@ body {
     border: none !important;
 }
 
-.my-infolist-event {
-    width: 218px !important;
+.my-infolist-centernews, .my-infolist-mycourses {
+    margin: 0 !important;
+    margin-left: 16px !important;
+    margin-right: 8px !important;
+    margin-bottom: 16px !important;
+}
+
+.my-infolist-event, .my-infolist-tips {
+    width: calc(100% - 58px) !important;
+    margin: 0 !important;
+    margin-left: 8px !important;
+    margin-right: 16px !important;
+    margin-bottom: 16px !important;
 }
 
 .my-infolist-submitlog h3, .my-infolist-tips .tips-list h3 {
@@ -83,12 +112,12 @@ body {
     padding-bottom: 5px !important;
 }
 
-.my-infolist-event .showmore {
-    border: none !important;
+.my-infolist-submitlog td.event-title a {
+    width: 100% !important;
 }
 
-.my-infolist-tips {
-    width: 218px !important;
+.my-infolist-event .showmore {
+    border: none !important;
 }
 
 .my-infolist-tips .my-infolist-header {
