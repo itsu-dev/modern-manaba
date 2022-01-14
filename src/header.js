@@ -46,7 +46,7 @@ window.onload = () => {
     div2.setAttribute('onclick', "window.location.href = 'home_library_reminder';")
     div2.appendChild(reminder);
 
-    let mynavi = document.getElementById("mynavi")
+    let mynavi = document.getElementById("mynavi");
     mynavi.innerHTML += '';
     mynavi.appendChild(div1);
     mynavi.appendChild(div2);
@@ -55,17 +55,29 @@ window.onload = () => {
     english.classList.add('mynavi-button-a');
     english.innerHTML = 'English';
 
-    let mylangJa = document.getElementsByClassName("mylang-ja")[0]
-    mylangJa.innerHTML = '';
-    mylangJa.setAttribute('onclick', "window.location.href = 'home_lang_en';")
-    mylangJa.appendChild(english);
+    let japanese = document.createElement('span');
+    japanese.classList.add('mynavi-button-a');
+    japanese.innerHTML = '日本語';
+
+    if (document.getElementsByClassName("mylang-ja")[0]) {
+        let mylangJa = document.getElementsByClassName("mylang-ja")[0];
+        mylangJa.innerHTML = '';
+        mylangJa.setAttribute('onclick', "window.location.href = 'home_lang_en';")
+        mylangJa.appendChild(english);
+    } else {
+        let mylangEn = document.getElementsByClassName("mylang-en")[0];
+        mylangEn.innerHTML = '';
+        mylangEn.setAttribute('onclick', "window.location.href = 'home_lang_ja';")
+        mylangEn.appendChild(japanese);
+    }
+
 
     let memo = document.createElement('span');
     memo.classList.add('mynavi-button-a');
     memo.innerHTML = 'メモ一覧';
 
-    let memoDiv = document.createElement('div')
-    memoDiv.classList.add('memo-div')
+    let memoDiv = document.createElement('div');
+    memoDiv.classList.add('memo-div');
     memoDiv.setAttribute('onclick', "window.location.href = 'home_usermemo';")
     memoDiv.appendChild(memo);
 
@@ -74,8 +86,8 @@ window.onload = () => {
     respon.setAttribute('src', '/respon8.png');
     respon.setAttribute('target', '_blank');
 
-    let responDiv = document.createElement('div')
-    responDiv.classList.add('respon-div')
+    let responDiv = document.createElement('div');
+    responDiv.classList.add('respon-div');
     responDiv.setAttribute('onclick', "window.location.href = 'https://atmnb.tsukuba.ac.jp/attend/tsukuba?relogin=1';")
     responDiv.appendChild(respon);
 
@@ -92,5 +104,5 @@ window.onload = () => {
         document.getElementsByClassName("pageheader-course")[0].remove();
     }
 
-    document.getElementById("mylinks")
+    document.getElementById("mylinks");
 }
