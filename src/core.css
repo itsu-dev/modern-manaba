@@ -12,9 +12,9 @@ body {
 }
 
 .my-course::after {
-    content: "";			/* 空のコンテンツを作成 */
-    display: block;		/* 空のコンテンツをブロックボックスにする */
-    clear: both;			/* 回り込みの解除 */
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .pagebody {
@@ -55,25 +55,25 @@ body {
 }
 
 .alertlist div {
-    margin: 0px 20px 0px 15px !important;
+    margin: 0 20px 0 15px !important;
 }
 
-.my-infolist {
+.my-infolist, .info-list-card, .info-list-cardl, .info-list-cardr, .top-contents-list {
     padding: 12px !important;
     padding-left: 16px !important;
     padding-right: 16px !important;
     background: #ffffff !important;
     margin-bottom: 16px !important;
-    border: #e0e0e0 solid 1px;
+    border: #e0e0e0 solid 1px !important;
     box-shadow: 2px 2px 4px #bdbdbd;
 }
 
-.my-infolist-header {
+.my-infolist-header, .info-list-card-header, .top-contents-list-header {
     background: #ffffff !important;
     padding: 0 !important;
 }
 
-.my-infolist-header h2 {
+.my-infolist-header h2, .info-list-card-header h2, .top-contents-list-header h2 {
     color: #1b5e20 !important;
     font-size: 1.8em !important;
     font-weight: normal !important;
@@ -81,7 +81,7 @@ body {
     padding-bottom: 12px !important;
 }
 
-.my-infolist-body {
+.my-infolist-body, .info-list-card-body, .top-contents-list-body {
     padding: 0 !important;
     margin: 0 !important;
     margin-top: 12px !important;
@@ -129,16 +129,20 @@ body {
     margin-top: 0 !important;
 }
 
+tr.row0 {
+    background: #ffffff !important;
+}
+
 table tr {
     border: none !important;
 }
 
-table td {
+table tr:nth-child(even) {
     background: #e8f5e9;
 }
 
-table tr:nth-child(odd) td {
-    background: #fff;
+table tr:nth-child(odd) {
+    background: #ffffff;
 }
 
 table.stdlist {
@@ -156,6 +160,7 @@ table.stdlist tr.title th {
 table.stdlist tr td {
     border-color: #bcbcbc !important;
     border-style: dotted !important;
+    border-width: 1px !important;
     border-top: none !important;
     border-bottom: none !important;
 }
@@ -177,4 +182,211 @@ ul.infolist-tab a {
 ul.infolist-tab li.current a {
     color: #2e7d32 !important;
     background: none !important;
+}
+
+/*
+メインメニューバー下のヘッダ
+ */
+.pageheader-course {
+    width: 100% !important;
+    height: 104px !important;
+    margin: 0 !important;
+    background: transparent !important;
+}
+
+/*
+コースタイトルのdiv
+ */
+.pageheader-course-coursename {
+    width: 80% !important;
+}
+
+/*
+コースタイトル
+ */
+#coursename {
+    text-decoration: #2e7d32 !important;
+    color: #2e7d32 !important;
+    font-size: 1.2em !important;
+    font-weight: normal !important;
+}
+
+/*
+担当教員と開講時期のdiv
+ */
+.pageheader-course-courseteacher {
+    display: flex !important;
+    margin: 0 !important;
+    left: 95px !important;
+    top: 42px !important;
+    width: auto !important;
+}
+
+/*
+担当教員
+ */
+.course-courseteacher {
+    width: auto !important;
+}
+
+.courseteacher-name {
+    width: auto !important;
+    margin-right: 32px !important;
+}
+
+.coursedata-info {
+    width: auto !important;
+    margin-right: 32px !important;
+}
+
+/*
+movieリンク
+ */
+.pageheader-course-extlink {
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    position: unset !important;
+}
+
+.pageheader-course-extlink-student {
+    top: 0 !important
+}
+
+.course-menu {
+    width: 100% !important;
+    left: 0 !important;
+    top: 71px !important;
+    background: #263238 !important;
+    margin-bottom: 16px !important;
+    box-shadow: 0 2px 4px;
+}
+
+.course-menu span {
+    color: #ffffff !important;
+}
+
+.course-menu-query, .course-menu-survey, .course-menu-report, .course-menu-project, .course-menu-grade, .course-menu-bbs, .course-menu-coursecontents {
+    width: 100px !important;
+    height: 31px !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: transparent !important;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    border-bottom-width: 3px;
+    top: 0 !important;
+    margin-bottom: 3px !important;
+    cursor: pointer;
+}
+
+.course-menu-query:hover, .course-menu-survey:hover, .course-menu-report:hover, .course-menu-project:hover, .course-menu-grade:hover, .course-menu-bbs:hover, .course-menu-coursecontents:hover {
+    border-bottom-color: #66bb6a;
+}
+
+/*
+個別指導（コレクション）・提出記録
+ */
+.rightmostbutton {
+    padding: 0 !important;
+    margin: 0 16px 16px 0 !important;
+}
+
+/*
+メインコンテンツdiv
+ */
+.content-body {
+    padding: 0 !important;
+}
+
+/*
+現在、自己登録期間中...
+ */
+.description {
+    box-sizing: border-box;
+    padding: 12px !important;
+    background: #e8f5e9 !important;
+    border: #b6c2b7 solid 1px !important;
+    border-radius: 0 !important;
+    box-shadow: 2px 2px 4px #bdbdbd;
+    margin: 16px !important;
+}
+
+/*
+コースニュース・スレッドdiv
+ */
+.info-list {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around;
+    margin: 0 0 16px 0 !important;
+}
+
+.info-list-cardl, .info-list-cardr {
+    box-sizing: border-box;
+    width: 50% !important;
+}
+
+/*
+コースニュース
+ */
+.info-list-cardl {
+    margin: 0 8px 0 16px !important;
+}
+
+/*
+スレッド
+ */
+.info-list-cardr {
+    float: left !important;
+    margin: 0 16px 0 8px !important;
+}
+
+/*
+コースニュース・スレッドの表
+ */
+.groupnewslist td, .groupnewslist th, .groupthreadlist td, .groupthreadlist th {
+    border: none !important;
+}
+
+.groupnewslist, .groupthreadlist {
+    padding: 0 !important;
+}
+
+/*
+コンテンツ
+ */
+.top-contents-list {
+    box-sizing: border-box !important;
+    margin: 16px !important;
+}
+
+.top-contents-list-body {
+    background: #ffffff !important;
+    margin-top: 16px !important;
+}
+
+.top-contents-list-footer {
+    background: #ffffff !important;
+    height: auto !important;
+}
+
+/*
+コンテンツの中身のカード
+ */
+.contents-card {
+    margin-bottom: 16px !important;
+    margin-right: 16px !important;
+    border: #e0e0e0 solid 1px !important;
+    box-shadow: 2px 2px 6px #bdbdbd !important;
+}
+
+/*
+（共通）カード右下の○○一覧
+ */
+.showmore {
+    padding: 0 !important;
 }
