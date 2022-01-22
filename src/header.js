@@ -101,7 +101,8 @@ window.onload = () => {
     document.documentElement.style.visibility = '';
 
     // homeならヘッダを消す
-    if (location.pathname === '/ct/home') {
+    const regex = new RegExp("/ct/home.*");
+    if (regex.test(location.pathname)) {
         document.getElementsByClassName("pageheader-course")[0].remove();
 
     // メニューバー下のヘッダがあるなら

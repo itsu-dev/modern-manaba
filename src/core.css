@@ -211,6 +211,10 @@ ul.infolist-tab li.current a {
     font-weight: normal !important;
 }
 
+#coursename:hover {
+    text-decoration: underline; !important
+}
+
 /*
 担当教員と開講時期のdiv
  */
