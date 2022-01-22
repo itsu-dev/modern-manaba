@@ -136,7 +136,7 @@ window.onload = () => {
             let courseMenuReportSpan = document.createElement("span");
             courseMenuReportSpan.innerHTML = 'レポート';
             courseMenuReportSpan.classList.add("course-menu-a");
-            courseMenuReport.setAttribute("href", "window.location.href = '" + courseMenuReport.getElementsByTagName("a")[0].getAttribute("href") + "';");
+            courseMenuReport.setAttribute("onclick", "window.location.href = '" + courseMenuReport.getElementsByTagName("a")[0].getAttribute("href") + "';");
             courseMenuReport.innerHTML = '';
             courseMenuReport.appendChild(courseMenuReportSpan);
 
