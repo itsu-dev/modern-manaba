@@ -101,7 +101,8 @@ window.onload = () => {
     document.documentElement.style.visibility = '';
 
     // homeならヘッダを消す
-    if (location.pathname === '/ct/home') {
+    const regex = new RegExp("/ct/home.*");
+    if (regex.test(location.pathname)) {
         document.getElementsByClassName("pageheader-course")[0].remove();
 
     // メニューバー下のヘッダがあるなら
@@ -136,7 +137,7 @@ window.onload = () => {
             let courseMenuReportSpan = document.createElement("span");
             courseMenuReportSpan.innerHTML = 'レポート';
             courseMenuReportSpan.classList.add("course-menu-a");
-            courseMenuReport.setAttribute("href", "window.location.href = '" + courseMenuReport.getElementsByTagName("a")[0].getAttribute("href") + "';");
+            courseMenuReport.setAttribute("onclick", "window.location.href = '" + courseMenuReport.getElementsByTagName("a")[0].getAttribute("href") + "';");
             courseMenuReport.innerHTML = '';
             courseMenuReport.appendChild(courseMenuReportSpan);
 
