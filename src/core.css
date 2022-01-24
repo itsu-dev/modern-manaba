@@ -58,14 +58,14 @@ body {
     margin: 0 20px 0 15px !important;
 }
 
-.my-infolist, .info-list-card, .info-list-cardl, .info-list-cardr, .top-contents-list {
+.my-infolist, .info-list-card, .info-list-cardl, .info-list-cardr, .top-contents-list, .groupnews-msg {
     padding: 12px !important;
     padding-left: 16px !important;
     padding-right: 16px !important;
     background: #ffffff !important;
     margin-bottom: 16px !important;
     border: #e0e0e0 solid 1px !important;
-    box-shadow: 2px 2px 4px #bdbdbd;
+    box-shadow: 2px 2px 4px #bdbdbd !important;
 }
 
 .my-infolist-header, .info-list-card-header, .top-contents-list-header {
@@ -73,7 +73,7 @@ body {
     padding: 0 !important;
 }
 
-.my-infolist-header h2, .info-list-card-header h2, .top-contents-list-header h2 {
+.my-infolist-header h2, .info-list-card-header h2, .top-contents-list-header h2, .msg-body h2 {
     color: #1b5e20 !important;
     font-size: 1.8em !important;
     font-weight: normal !important;
@@ -184,6 +184,10 @@ ul.infolist-tab li.current a {
     background: none !important;
 }
 
+#container {
+    min-width: 300px !important;
+}
+
 /*
 メインメニューバー下のヘッダ
  */
@@ -209,6 +213,10 @@ ul.infolist-tab li.current a {
     color: #2e7d32 !important;
     font-size: 1.2em !important;
     font-weight: normal !important;
+}
+
+#coursename:hover {
+    text-decoration: underline; !important
 }
 
 /*
@@ -253,10 +261,13 @@ movieリンク
     top: 0 !important
 }
 
+/*
+コースタイトル下のメニューバー
+ */
 .course-menu {
     width: 100% !important;
     left: 0 !important;
-    top: 71px !important;
+    top: 74px !important;
     background: #263238 !important;
     margin-bottom: 16px !important;
     box-shadow: 0 2px 4px;
@@ -300,6 +311,13 @@ movieリンク
  */
 .content-body {
     padding: 0 !important;
+    margin: 0 !important;
+}
+
+@media screen and (min-width: 1024px) {
+    .content-body {
+        margin: 0 20% !important;
+    }
 }
 
 /*
@@ -327,7 +345,7 @@ movieリンク
 
 .info-list-cardl, .info-list-cardr {
     box-sizing: border-box;
-    width: 50% !important;
+    width: 100% !important;
 }
 
 /*
@@ -348,12 +366,35 @@ movieリンク
 /*
 コースニュース・スレッドの表
  */
+.groupnewslist, .groupthreadlist {
+    height: auto !important;
+}
+
 .groupnewslist td, .groupnewslist th, .groupthreadlist td, .groupthreadlist th {
     border: none !important;
 }
 
+.groupnewslist td, .groupthreadlist td {
+    padding: 0 !important;
+}
+
+.groupnewslist th, .groupthreadlist th {
+    padding: 2px 0 2px 20px !important;
+    width: 70% !important;
+}
+
 .groupnewslist, .groupthreadlist {
     padding: 0 !important;
+}
+
+.groupnewslist th a, .groupthreadlist th a {
+    width: auto !important;
+    white-space: normal !important;
+    overflow: unset !important;
+}
+
+.no-info {
+    height: auto !important;
 }
 
 /*
@@ -375,8 +416,9 @@ movieリンク
 }
 
 /*
+
 コンテンツの中身のカード
- */
+*/
 .contents-card {
     margin-bottom: 16px !important;
     margin-right: 16px !important;
@@ -388,5 +430,61 @@ movieリンク
 （共通）カード右下の○○一覧
  */
 .showmore {
+    padding: 4px 0 0 !important;
+}
+
+.memobutton {
+    padding-right: 16px !important;
+}
+
+.groupnews-msg {
+    border-radius: 0 !important;
+    width: 100% !important;
+    margin: 0 auto 16px !important;
+}
+
+.msg-body {
+    padding: 16px !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+.msg-title {
     padding: 0 !important;
+    border-bottom: none !important;
+}
+
+.msg-title h2 {
+    color: #1b5e20 !important;
+    font-size: 1.3em !important;
+    font-weight: normal !important;
+    padding: 0 !important;
+    padding-bottom: 12px !important;
+    width: auto !important;
+    float: unset !important;
+}
+
+span.msg-date {
+    float: unset !important;
+    width: auto !important;
+    padding: 0 !important;
+}
+
+.msg-info {
+    border-bottom: none !important;
+}
+
+span.msg-info-caption {
+    background: transparent !important;
+    color: #388e3c !important;
+    padding: 0 !important;
+    width: auto !important;
+}
+
+.msg-text {
+    padding: 16px 0 0 !important;
+}
+
+.pagefooter {
+    width: 100% !important;
 }
