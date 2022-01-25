@@ -1,5 +1,18 @@
 body {
-    background: #F4F5F7 !important;
+    --color-background-main: #f4f5f7;
+    --color-background-theme: #e8f5e9;
+    --color-title-2: #1b5e20;
+    --color-title-3: #388e3c;
+    --color-card-shadow: #bdbdbd;
+    --color-card-border-white: #e0e0e0;
+    --color-card-background-alert: #f8bbd0;
+    --color-card-border-alert: #c48b9f;
+    --color-card-background-memo: #fff9c4;
+    --color-card-border-memo: #cbc693;
+    --color-menubar-background: #263238;
+    --color-menubar-hover: #66bb6a;
+
+    background: var(--color-background-main) !important;
 }
 
 .pagebody, .home {
@@ -35,22 +48,22 @@ body {
 
 .memo0 {
     padding: 12px !important;
-    background: #fff9c4 !important;
-    border: #cbc693 solid 1px !important;
-    box-shadow: 2px 2px 4px #bdbdbd;
+    background: var(--color-card-background-memo) !important;
+    border: var(--color-card-border-memo) solid 1px !important;
+    box-shadow: 2px 2px 4px var(--color-card-shadow);
     margin: 16px !important;
 }
 
 .alertlist {
     padding: 12px !important;
-    background: #f8bbd0 !important;
-    border: #c48b9f solid 1px;
-    box-shadow: 2px 2px 4px #bdbdbd;
+    background: var(--color-card-background-alert) !important;
+    border: var(--color-card-border-alert) solid 1px;
+    box-shadow: 2px 2px 4px var(--color-card-shadow);
     margin: 0 16px 16px !important;
 }
 
 .alertlist a, .alertlist span.unread {
-    color: #ffffff !important;
+    color: white !important;
     font-weight: normal !important;
 }
 
@@ -62,19 +75,19 @@ body {
     padding: 12px !important;
     padding-left: 16px !important;
     padding-right: 16px !important;
-    background: #ffffff !important;
+    background: white !important;
     margin-bottom: 16px !important;
-    border: #e0e0e0 solid 1px !important;
-    box-shadow: 2px 2px 4px #bdbdbd !important;
+    border: var(--color-card-border-white) solid 1px !important;
+    box-shadow: 2px 2px 4px var(--color-card-shadow) !important;
 }
 
 .my-infolist-header, .info-list-card-header, .top-contents-list-header {
-    background: #ffffff !important;
+    background: white !important;
     padding: 0 !important;
 }
 
 .my-infolist-header h2, .info-list-card-header h2, .top-contents-list-header h2, .msg-body h2 {
-    color: #1b5e20 !important;
+    color: var(--color-title-2) !important;
     font-size: 1.8em !important;
     font-weight: normal !important;
     padding: 0 !important;
@@ -95,6 +108,12 @@ body {
     margin-bottom: 16px !important;
 }
 
+div.news-title, .my-infolist-event td.event-title a {
+    width: auto !important;
+    overflow: unset !important;
+    white-space: normal !important;
+}
+
 .my-infolist-event, .my-infolist-tips {
     width: calc(100% - 58px) !important;
     margin: 0 !important;
@@ -105,7 +124,7 @@ body {
 
 .my-infolist-submitlog h3, .my-infolist-tips .tips-list h3 {
     background: none !important;
-    color: #388e3c !important;
+    color: var(--color-title-3) !important;
     font-weight: normal !important;
     padding: 0 !important;
     padding-top: 5px !important;
@@ -130,7 +149,7 @@ body {
 }
 
 tr.row0 {
-    background: #ffffff !important;
+    background: white !important;
 }
 
 table tr {
@@ -138,11 +157,11 @@ table tr {
 }
 
 table tr:nth-child(even) {
-    background: #e8f5e9;
+    background: var(--color-background-theme);
 }
 
 table tr:nth-child(odd) {
-    background: #ffffff;
+    background: white;
 }
 
 table.stdlist {
@@ -151,9 +170,9 @@ table.stdlist {
 }
 
 table.stdlist tr.title th {
-    color: #388e3c !important;
+    color: var(--color-title-3) !important;
     font-weight: normal; !important;
-    background-color: #ffffff !important;
+    background-color: white !important;
     border: none !important;
 }
 
@@ -180,7 +199,7 @@ ul.infolist-tab a {
 }
 
 ul.infolist-tab li.current a {
-    color: #2e7d32 !important;
+    color: var(--color-title-2) !important;
     background: none !important;
 }
 
@@ -209,8 +228,8 @@ ul.infolist-tab li.current a {
 コースタイトル
  */
 #coursename {
-    text-decoration: #2e7d32 !important;
-    color: #2e7d32 !important;
+    text-decoration: var(--color-title-2) !important;
+    color: var(--color-title-2) !important;
     font-size: 1.2em !important;
     font-weight: normal !important;
 }
@@ -268,13 +287,13 @@ movieリンク
     width: 100% !important;
     left: 0 !important;
     top: 74px !important;
-    background: #263238 !important;
+    background: var(--color-menubar-background) !important;
     margin-bottom: 16px !important;
     box-shadow: 0 2px 4px;
 }
 
 .course-menu span {
-    color: #ffffff !important;
+    color: white !important;
 }
 
 .course-menu-query, .course-menu-survey, .course-menu-report, .course-menu-project, .course-menu-grade, .course-menu-bbs, .course-menu-coursecontents {
@@ -295,7 +314,7 @@ movieリンク
 }
 
 .course-menu-query:hover, .course-menu-survey:hover, .course-menu-report:hover, .course-menu-project:hover, .course-menu-grade:hover, .course-menu-bbs:hover, .course-menu-coursecontents:hover {
-    border-bottom-color: #66bb6a;
+    border-bottom-color: var(--color-menubar-hover);
 }
 
 /*
@@ -326,10 +345,10 @@ movieリンク
 .description {
     box-sizing: border-box;
     padding: 12px !important;
-    background: #e8f5e9 !important;
+    background: var(--color-background-theme) !important;
     border: #b6c2b7 solid 1px !important;
     border-radius: 0 !important;
-    box-shadow: 2px 2px 4px #bdbdbd;
+    box-shadow: 2px 2px 4px var(--color-card-shadow);
     margin: 16px !important;
 }
 
@@ -406,12 +425,12 @@ movieリンク
 }
 
 .top-contents-list-body {
-    background: #ffffff !important;
+    background: white !important;
     margin-top: 16px !important;
 }
 
 .top-contents-list-footer {
-    background: #ffffff !important;
+    background: white !important;
     height: auto !important;
 }
 
@@ -422,8 +441,8 @@ movieリンク
 .contents-card {
     margin-bottom: 16px !important;
     margin-right: 16px !important;
-    border: #e0e0e0 solid 1px !important;
-    box-shadow: 2px 2px 6px #bdbdbd !important;
+    border: var(--color-card-border-white) solid 1px !important;
+    box-shadow: 2px 2px 6px var(--color-card-shadow) !important;
 }
 
 /*
@@ -441,12 +460,14 @@ movieリンク
     border-radius: 0 !important;
     width: 100% !important;
     margin: 0 auto 16px !important;
+    background: var(--color-background-theme) !important;
 }
 
 .msg-body {
     padding: 16px !important;
     margin: 0 !important;
     border: none !important;
+    background: var(--color-background-theme) !important;
 }
 
 .msg-title {
@@ -455,7 +476,7 @@ movieリンク
 }
 
 .msg-title h2 {
-    color: #1b5e20 !important;
+    color: var(--color-title-2) !important;
     font-size: 1.3em !important;
     font-weight: normal !important;
     padding: 0 !important;
@@ -476,7 +497,7 @@ span.msg-date {
 
 span.msg-info-caption {
     background: transparent !important;
-    color: #388e3c !important;
+    color: var(--color-title-3) !important;
     padding: 0 !important;
     width: auto !important;
 }
@@ -486,5 +507,5 @@ span.msg-info-caption {
 }
 
 .pagefooter {
-    width: 100% !important;
+    margin: 0 auto 30px !important;
 }
