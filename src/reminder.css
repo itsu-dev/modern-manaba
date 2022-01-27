@@ -124,3 +124,34 @@ table.stdlist tr td:last-child {
 .pagefooter .footer-manual-link {
     left: calc((100% - 950px) / 2 + 260px) !important;
 }
+
+@media screen and (max-width: 1100px) {
+    table.stdlist {
+        table-layout: fixed !important;
+        width: calc(100% / 1.1) !important;
+    }
+    table.stdlist th {
+        color: #388e3c !important;
+        font-weight: normal !important;
+        background-color: #ffffff !important;
+        border: none !important;
+        position: sticky !important;
+        word-wrap: break-word;
+    }
+    table.stdlist tr td {
+        border-color: #bcbcbc !important;
+        border-style: dotted !important;
+        border-width: 1px !important;
+        border-top: none !important;
+        border-bottom: none !important;
+        border: none !important;
+        word-wrap: break-word;
+    }
+    .description {
+        width: calc(100%/1.5) !important;
+        margin-left: 0% !important;
+    }
+    .navigator {
+        width: calc(100%/1.5) !important;
+    }
+}
