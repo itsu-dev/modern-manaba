@@ -114,7 +114,7 @@ table.stdlist tr td:last-child {
     background-position: center !important;
     box-shadow: 0 5px 2px -3px #dbdbdb inset;
     width: 100% !important;
-    margin: 0 auto 30px !important;
+    margin: 0 auto 0 !important;
 }
 
 .pagefooter #systemversion {
