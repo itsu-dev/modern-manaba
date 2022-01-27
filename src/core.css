@@ -71,7 +71,7 @@ body {
     margin: 0 20px 0 15px !important;
 }
 
-.my-infolist, .info-list-card, .info-list-cardl, .info-list-cardr, .top-contents-list, .groupnews-msg {
+.my-infolist, .info-list-card, .info-list-cardl, .info-list-cardr, .top-contents-list, .groupnews-msg, .contentbody-l {
     padding: 12px !important;
     padding-left: 16px !important;
     padding-right: 16px !important;
@@ -86,7 +86,7 @@ body {
     padding: 0 !important;
 }
 
-.my-infolist-header h2, .info-list-card-header h2, .top-contents-list-header h2, .msg-body h2 {
+.my-infolist-header h2, .info-list-card-header h2, .top-contents-list-header h2, .msg-body h2, .contentbody-l h1 {
     color: var(--color-title-2) !important;
     font-size: 1.8em !important;
     font-weight: normal !important;
@@ -157,11 +157,11 @@ table tr {
 }
 
 table tr:nth-child(even) {
-    background: var(--color-background-theme);
+    background: var(--color-background-theme) !important;
 }
 
 table tr:nth-child(odd) {
-    background: white;
+    background: white !important;
 }
 
 table.stdlist {
@@ -176,7 +176,7 @@ table.stdlist tr.title th {
     border: none !important;
 }
 
-table.stdlist tr td {
+table.stdlist tr td, table.stdlist tr th {
     border-color: #bcbcbc !important;
     border-style: dotted !important;
     border-width: 1px !important;
@@ -510,8 +510,55 @@ span.msg-info-caption {
 }
 
 /*
-フッタ
+小テスト、アンケート、レポート、プロジェクト、成績など
  */
+.contentbody-l {
+    /* 本当はレスポンシブにしたいけどコースニュースが
+    662pxで!importantを張っている**仕様なため、仕方なくそれに合わせた */
+    width: 662px !important;
+    padding: 16px !important;
+    margin: 16px auto 16px !important;
+}
+
+.contentbody-l h1 {
+    margin: 0 !important;
+    border: none !important;
+}
+
+.contentbody-l .description {
+    margin: 0 !important;
+}
+
+.contentbody-footer {
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+}
+
+table.stdlist-reportV2 tr.row1 {
+    background-color: unset;
+}
+
+div.form {
+    border: none !important;
+    background-color: #f5f5f5 !important;
+
+}
+
+/*
+フッタ
+*/
 .pagefooter {
+    background-color: white !important;
+    background-position: center !important;
+    box-shadow: 0 5px 2px -3px #dbdbdb inset;
+    width: 100% !important;
     margin: 0 auto 30px !important;
+}
+
+.pagefooter #systemversion {
+    left: calc((100% - 950px) / 2) !important;
+}
+
+.pagefooter .footer-manual-link {
+    left: calc((100% - 950px) / 2 + 260px) !important;
 }

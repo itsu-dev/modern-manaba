@@ -109,8 +109,18 @@ table.stdlist tr td:last-child {
     margin: 16px !important;
 }
 
-
 .pagefooter {
+    background-color: white !important;
+    background-position: center !important;
+    box-shadow: 0 5px 2px -3px #dbdbdb inset;
     width: 100% !important;
+    margin: 0 auto 30px !important;
 }
 
+.pagefooter #systemversion {
+    left: calc((100% - 950px) / 2) !important;
+}
+
+.pagefooter .footer-manual-link {
+    left: calc((100% - 950px) / 2 + 260px) !important;
+}
