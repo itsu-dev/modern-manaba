@@ -1,0 +1,116 @@
+body {
+    background: #F4F5F7 !important;
+}
+
+h1 {
+    color: #1b5e20 !important;
+    font-size: 1.8em !important;
+    font-weight: normal !important;
+    border-left: none !important;
+}
+
+h3 { 
+    color: #1b5e20 !important;
+}
+
+input[type="submit"] {
+    margin-left: 16px !important;
+}
+
+.navigator {
+    font-size: 1.0em !important;
+    background: #ffffff !important;
+    border-left: 1px solid #ccc !important;
+    border-right: none !important;
+    box-shadow: 2px 2px 4px #bdbdbd !important;
+    padding-bottom: 5px !important;
+    margin-top: 11px !important;
+    margin-bottom: 11px !important;
+}
+
+.pagebody, .home {
+    width: 100% !important;
+}
+
+.pagebody {
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.contentbody-left {
+    width: 70% !important;
+    padding: 0 !important;
+}
+
+.contentbody-right {
+    width: 30% !important;
+    padding: 0 !important;
+}
+
+tr.row0 {
+    background: #ffffff !important;
+}
+
+table tr {
+    border: none !important;
+}
+
+
+table.stdlist tr:nth-child(even) {
+    background: #e8f5e9;
+}
+
+table.stdlist tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+table.stdlist {
+    width: 100% !important;
+    border: none !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+table.stdlist tr.title th {
+    color: #388e3c !important;
+    font-weight: normal !important;
+    background-color: #ffffff !important;
+    border: none !important;
+}
+
+table.stdlist tr td {
+    border-color: #bcbcbc !important;
+    border-style: dotted !important;
+    border-width: 1px !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border: none !important
+}
+
+table.stdlist tr td:first-child {
+    border-left: none !important;
+}
+
+table.stdlist tr td:last-child {
+    border-right: none !important;
+}
+
+#container {
+    min-width: 300px !important;
+}
+
+.description {
+    box-sizing: border-box;
+    padding: 12px !important;
+    border: #b6c2b7 solid 1px !important;
+    border-radius: 0 !important;
+    box-shadow: 2px 2px 4px #bdbdbd;
+    margin: 16px !important;
+}
+
+
+.pagefooter {
+    width: 100% !important;
+}
+
