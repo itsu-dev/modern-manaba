@@ -435,7 +435,6 @@ movieリンク
 }
 
 /*
-
 コンテンツの中身のカード
 */
 .contents-card {
@@ -542,6 +541,24 @@ div.form {
     border: none !important;
     background-color: #f5f5f5 !important;
 
+}
+
+/*
+お知らせ
+ */
+.tpanel_frame .msg {
+    background-color: white !important;
+    border-radius: unset !important;
+    padding: 0 !important;
+}
+
+.msg-footer {
+    display: none !important;
+    height: 0 !important;
+}
+
+.tpanel_frame .msg-body {
+    background-color: white !important;
 }
 
 /*
