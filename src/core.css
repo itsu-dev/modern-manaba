@@ -317,6 +317,10 @@ movieリンク
     border-bottom-color: var(--color-menubar-hover);
 }
 
+.my-unreadcount {
+    box-shadow: none !important;
+}
+
 /*
 個別指導（コレクション）・提出記録
  */

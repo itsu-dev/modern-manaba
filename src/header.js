@@ -117,47 +117,57 @@ window.onload = () => {
             // 小テスト
             let courseMenuQuery = document.getElementsByClassName("course-menu-query")[0];
             let courseMenuQuerySpan = document.createElement("span");
+            const examCount = document.getElementById("examstatus");
             courseMenuQuerySpan.innerHTML = '小テスト';
             courseMenuQuerySpan.classList.add("course-menu-a");
             courseMenuQuery.setAttribute("onclick","window.location.href = '" + courseMenuQuery.getElementsByTagName("a")[0].getAttribute("href") + "';");
             courseMenuQuery.innerHTML = '';
             courseMenuQuery.appendChild(courseMenuQuerySpan);
+            if (examCount !== null) courseMenuQuery.appendChild(examCount);
 
             // アンケート
             let courseMenuSurvey = document.getElementsByClassName("course-menu-survey")[0];
             let courseMenuSurveySpan = document.createElement("span");
+            const surveyCount = document.getElementById("surveystatus");
             courseMenuSurveySpan.innerHTML = 'アンケート';
             courseMenuSurveySpan.classList.add("course-menu-a");
             courseMenuSurvey.setAttribute("onclick", "window.location.href = '" + courseMenuSurvey.getElementsByTagName("a")[0].getAttribute("href") + "';");
             courseMenuSurvey.innerHTML = '';
             courseMenuSurvey.appendChild(courseMenuSurveySpan);
+            if (surveyCount !== null) courseMenuSurvey.appendChild(surveyCount);
 
             //　レポート
             let courseMenuReport = document.getElementsByClassName("course-menu-report")[0];
             let courseMenuReportSpan = document.createElement("span");
+            const reportCount = document.getElementById("reportstatus");
             courseMenuReportSpan.innerHTML = 'レポート';
             courseMenuReportSpan.classList.add("course-menu-a");
             courseMenuReport.setAttribute("onclick", "window.location.href = '" + courseMenuReport.getElementsByTagName("a")[0].getAttribute("href") + "';");
             courseMenuReport.innerHTML = '';
             courseMenuReport.appendChild(courseMenuReportSpan);
+            if (reportCount !== null) courseMenuReport.appendChild(reportCount);
 
             // プロジェクト
             let courseMenuProject = document.getElementsByClassName("course-menu-project")[0];
             let courseMenuProjectSpan = document.createElement("span");
+            const projectCount = document.getElementById("projectstatus");
             courseMenuProjectSpan.innerHTML = 'プロジェクト';
             courseMenuProjectSpan.classList.add("course-menu-a");
             courseMenuProject.setAttribute("onclick", "window.location.href = '" + courseMenuProject.getElementsByTagName("a")[0].getAttribute("href") + "';");
             courseMenuProject.innerHTML = '';
             courseMenuProject.appendChild(courseMenuProjectSpan);
+            if (projectCount !== null) courseMenuProject.appendChild(projectCount);
 
             // 成績
             let courseMenuGrade = document.getElementsByClassName("course-menu-grade")[0];
             let courseMenuGradeSpan = document.createElement("span");
+            const gradeCount = document.getElementById("gradestatus");
             courseMenuGradeSpan.innerHTML = '成績';
             courseMenuGradeSpan.classList.add("course-menu-a");
             courseMenuGrade.setAttribute("onclick", "window.location.href = '" + courseMenuGrade.getElementsByTagName("a")[0].getAttribute("href") + "';");
             courseMenuGrade.innerHTML = '';
             courseMenuGrade.appendChild(courseMenuGradeSpan);
+            if (gradeCount !== null) courseMenuGrade.appendChild(gradeCount);
 
             // 掲示板
             let courseMenuBbs = document.getElementsByClassName("course-menu-bbs")[0];
