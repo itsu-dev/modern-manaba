@@ -5,6 +5,7 @@ body {
     --color-title-3: #388e3c;
     --color-text-disabled: #9e9e9e;
     --color-card-shadow: #bdbdbd;
+    --color-card-background: #ffffff;
     --color-card-border-white: #e0e0e0;
     --color-card-background-alert: #f8bbd0;
     --color-card-border-alert: #c48b9f;
@@ -18,6 +19,39 @@ body {
 
     background: var(--color-background-main) !important;
 }
+
+/*
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        --color-background-main: #000a12;
+        --color-background-theme: #445963;
+        --color-title-2: #dcedc8;
+        --color-title-3: #aed681;
+        --color-text-disabled: #c1c1c1;
+        --color-card-shadow: #000000;
+        --color-card-background: #102027;
+        --color-card-border-white: #445963;
+        --color-card-background-alert: #ffebee;
+        --color-card-border-alert: #ccb9bc;
+        --color-card-background-memo: #fff9c4;
+        --color-card-border-memo: #cccab5;
+        --color-menubar-background: #102027;
+        --color-menubar-hover: #66bb6a;
+        --color-table-grade-bar: #2e7d32;
+        --color-table-border: #000a12;
+        --color-unreadcount-background: #ef5350;
+
+        color: #f4f4f4 !important;
+
+        background: var(--color-background-main) !important;
+    }
+
+    a {
+        color: #baddf9 !important;
+    }
+}
+
+ */
 
 .pagebody, .home {
     width: 100% !important;
@@ -79,14 +113,14 @@ body {
     padding: 12px !important;
     padding-left: 16px !important;
     padding-right: 16px !important;
-    background: white !important;
+    background: var(--color-card-background) !important;
     margin-bottom: 16px !important;
     border: var(--color-card-border-white) solid 1px !important;
     box-shadow: 2px 2px 4px var(--color-card-shadow) !important;
 }
 
 .my-infolist-header, .info-list-card-header, .top-contents-list-header {
-    background: white !important;
+    background: transparent !important;
     padding: 0 !important;
 }
 
@@ -153,7 +187,7 @@ div.news-title, .my-infolist-event td.event-title a {
 }
 
 tr.row0 {
-    background: white !important;
+    background: var(--color-card-background) !important;
 }
 
 table tr {
@@ -165,7 +199,7 @@ table tr:nth-child(even) {
 }
 
 table tr:nth-child(odd) {
-    background: white !important;
+    background: var(--color-card-background) !important;
 }
 
 table.stdlist {
@@ -176,7 +210,7 @@ table.stdlist {
 table.stdlist tr.title th {
     color: var(--color-title-3) !important;
     font-weight: normal; !important;
-    background-color: white !important;
+    background-color: var(--color-card-background) !important;
     border: none !important;
 }
 
@@ -293,7 +327,7 @@ movieリンク
     top: 74px !important;
     background: var(--color-menubar-background) !important;
     margin-bottom: 16px !important;
-    box-shadow: 0 2px 4px;
+    box-shadow: 0 2px 4px var(--color-card-shadow);
 }
 
 .course-menu span {
