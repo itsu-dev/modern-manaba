@@ -1,5 +1,10 @@
+body {
+    --color-menubar-background: #263238;
+    --color-menubar-hover: #66bb6a;
+}
+
 #mynavi {
-    background: #263238 !important;
+    background: var(--color-menubar-background) !important;
     height: 45px !important;
     margin-bottom: 16px !important;
     box-shadow: 0px 2px 4px;
@@ -13,7 +18,7 @@
 .mynavi-button-a {
     margin-left: auto;
     margin-right: auto;
-    color: #ffffff !important;
+    color: white !important;
 }
 
 .mynavi-button-home, .mynavi-button-course, .mynavi-button-portfolio, .mylang-ja, .mylang-en, .memo-div, .respon-div {
@@ -34,7 +39,7 @@
 }
 
 .mynavi-button-home:hover, .mynavi-button-course:hover, .mynavi-button-portfolio:hover, .mylang-ja:hover, .mylang-en:hover, .memo-div:hover, .respon-div:hover {
-    border-bottom-color: #66bb6a;
+    border-bottom-color: var(--color-menubar-hover);
 }
 
 .mylang-ja, .mylang-en {
@@ -64,7 +69,7 @@
 }
 
 .mylang-ja span, .mylang-en span, #header #mylang span, .memo-div span, .respon-div span {
-    color: #ffffff !important;
+    color: white !important;
     background: none !important;
     text-indent: unset !important;
     margin: 0 !important;
