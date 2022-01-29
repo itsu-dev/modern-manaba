@@ -189,5 +189,9 @@ window.onload = () => {
         }
     }
 
+    for (let td of document.querySelectorAll("td.gradebar")) {
+        td.setAttribute('style', '');
+    }
+
     document.getElementById("mylinks");
 }
