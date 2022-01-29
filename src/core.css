@@ -317,7 +317,9 @@ movieリンク
     border-bottom-color: var(--color-menubar-hover);
 }
 
-.my-unreadcount {
+.course-menu span.my-unreadcount {
+    background-color: #ee0000 !important;
+    background-image: none !important;
     box-shadow: none !important;
 }
 
