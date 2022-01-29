@@ -14,6 +14,7 @@ body {
     --color-menubar-hover: #66bb6a;
     --color-table-grade-bar: #2e7d32;
     --color-table-border: #bcbcbc;
+    --color-unreadcount-background: #e53835;
 
     background: var(--color-background-main) !important;
 }
@@ -321,9 +322,11 @@ movieリンク
 }
 
 .course-menu span.my-unreadcount {
-    background-color: #ee0000 !important;
+    background-color: var(--color-unreadcount-background) !important;
     background-image: none !important;
     box-shadow: none !important;
+    font-size: 13px !important;
+    border: none !important;
 }
 
 /*
