@@ -657,6 +657,7 @@ td input[type="submit"] {
 
 form .description {
     box-sizing: border-box;
+    background: var(--color-card-background) !important;
     padding: 12px !important;
     border: #b6c2b7 solid 1px !important;
     border-radius: 0 !important;
