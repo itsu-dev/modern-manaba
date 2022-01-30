@@ -160,7 +160,7 @@ div.news-title, .my-infolist-event td.event-title a {
     margin-bottom: 16px !important;
 }
 
-.my-infolist-submitlog h3, .my-infolist-tips .tips-list h3 {
+.my-infolist-submitlog h3, .my-infolist-tips .tips-list h3, .contentbody-l h3 {
     background: none !important;
     color: var(--color-title-3) !important;
     font-weight: normal !important;
@@ -388,7 +388,7 @@ span.my-unreadcount {
 /*
 現在、自己登録期間中...
  */
-.description {
+.content-body .description {
     box-sizing: border-box;
     padding: 12px !important;
     background: var(--color-background-theme) !important;
@@ -634,6 +634,44 @@ table.gradelist td.gradebar {
  */
 div.dates {
     color: var(--color-text-disabled) !important;
+}
+
+/*
+リマインダ
+*/
+td input[type="submit"] {
+    margin-left: 16px !important;
+}
+
+.contentbody-l .navigator {
+    font-size: 1.0em !important;
+    background: var(color-card-background) !important;
+    border-left: 1px solid #ccc !important;
+    border-right: none !important;
+    box-shadow: 2px 2px 4px #bdbdbd !important;
+    padding-bottom: 5px !important;
+    margin-top: 11px !important;
+    margin-bottom: 11px !important;
+}
+
+
+form .description {
+    box-sizing: border-box;
+    padding: 12px !important;
+    border: #b6c2b7 solid 1px !important;
+    border-radius: 0 !important;
+    box-shadow: 2px 2px 4px var(--color-card-shadow);
+    margin: 16px !important;
+}
+
+@media screen and (max-width: 1100px) {
+    form .description {
+        width: calc(100%/1.2) !important;
+        margin-left: 0% !important;
+    }
+    .contentbody-l .navigator {
+        width: calc(100%/1.5) !important;
+    }
 }
 
 /*
