@@ -388,7 +388,7 @@ span.my-unreadcount {
 /*
 現在、自己登録期間中...
  */
-.content-body, .description {
+.description {
     box-sizing: border-box;
     padding: 12px !important;
     background: var(--color-background-theme) !important;
