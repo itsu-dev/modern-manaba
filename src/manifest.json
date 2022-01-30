@@ -23,7 +23,8 @@
     {
       "matches": [
         "https://manaba.tsukuba.ac.jp/ct/course_*",
-        "https://manaba.tsukuba.ac.jp/ct/home*"
+        "https://manaba.tsukuba.ac.jp/ct/home*",
+        "https://manaba.tsukuba.ac.jp/ct/page*"
       ],
       "css": [
         "core.css"
