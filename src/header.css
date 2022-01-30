@@ -1,6 +1,23 @@
 body {
+    --color-background-main: #f4f5f7;
+    --color-background-theme: #e8f5e9;
+    --color-title-2: #1b5e20;
+    --color-title-3: #388e3c;
+    --color-text-disabled: #9e9e9e;
+    --color-card-shadow: #bdbdbd;
+    --color-card-background: #ffffff;
+    --color-card-border-white: #e0e0e0;
+    --color-card-background-alert: #f8bbd0;
+    --color-card-border-alert: #c48b9f;
+    --color-card-background-memo: #fff9c4;
+    --color-card-border-memo: #cbc693;
     --color-menubar-background: #263238;
     --color-menubar-hover: #66bb6a;
+    --color-table-grade-bar: #2e7d32;
+    --color-table-border: #bcbcbc;
+    --color-unreadcount-background: #ef5350;
+
+    background: var(--color-background-main) !important;
 }
 
 /*
@@ -35,6 +52,12 @@ body {
 }
 
  */
+
+.pagebody {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
 #orgheader {
     background-color: var(--color-background-main) !important;
@@ -112,3 +135,130 @@ body {
     margin: 0 !important;
     padding: 0 !important;
 }
+
+/*
+メインメニューバー下のヘッダ
+ */
+.pageheader-course {
+    width: 100% !important;
+    height: 104px !important;
+    margin: 0 !important;
+    background: transparent !important;
+}
+
+/*
+コースタイトルのdiv
+ */
+.pageheader-course-coursename {
+    width: 80% !important;
+}
+
+/*
+コースタイトル
+ */
+#coursename {
+    text-decoration: var(--color-title-2) !important;
+    color: var(--color-title-2) !important;
+    font-size: 1.2em !important;
+    font-weight: normal !important;
+}
+
+#coursename:hover {
+    text-decoration: underline !important;
+}
+
+/*
+担当教員と開講時期のdiv
+ */
+.pageheader-course-courseteacher {
+    display: flex !important;
+    margin: 0 !important;
+    left: 95px !important;
+    top: 42px !important;
+    width: auto !important;
+}
+
+/*
+担当教員
+ */
+.course-courseteacher {
+    width: auto !important;
+}
+
+.courseteacher-name {
+    width: auto !important;
+    margin-right: 32px !important;
+}
+
+.coursedata-info {
+    width: auto !important;
+    margin-right: 32px !important;
+}
+
+/*
+movieリンク
+ */
+.pageheader-course-extlink {
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    position: unset !important;
+}
+
+.pageheader-course-extlink-student {
+    top: 0 !important
+}
+
+/*
+個別指導（コレクション）・提出記録
+ */
+.rightmostbutton {
+    padding: 0 !important;
+    margin: 0 16px 16px 0 !important;
+}
+
+/*
+コースタイトル下のメニューバー
+ */
+.course-menu {
+    width: 100% !important;
+    left: 0 !important;
+    top: 74px !important;
+    background: var(--color-menubar-background) !important;
+    margin-bottom: 16px !important;
+    box-shadow: 0 2px 4px var(--color-card-shadow);
+}
+
+.course-menu span {
+    color: white !important;
+}
+
+.course-menu-query, .course-menu-survey, .course-menu-report, .course-menu-project, .course-menu-grade, .course-menu-bbs, .course-menu-coursecontents {
+    width: 100px !important;
+    height: 31px !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: transparent !important;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    border-bottom-width: 3px;
+    top: 0 !important;
+    margin-bottom: 3px !important;
+    cursor: pointer;
+}
+
+.course-menu-query:hover, .course-menu-survey:hover, .course-menu-report:hover, .course-menu-project:hover, .course-menu-grade:hover, .course-menu-bbs:hover, .course-menu-coursecontents:hover {
+    border-bottom-color: var(--color-menubar-hover);
+}
+
+span.my-unreadcount {
+    background-color: var(--color-unreadcount-background) !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    font-size: 13px !important;
+    border: none !important;
+}
+
