@@ -552,7 +552,7 @@ form .description {
 フッタ
 */
 .pagefooter {
-    background-color: white !important;
+    background-color: var(--color-background-main) !important;
     background-position: center !important;
     box-shadow: 0 5px 2px -3px #dbdbdb inset;
     width: 100% !important;

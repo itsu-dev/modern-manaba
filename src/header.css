@@ -262,3 +262,21 @@ span.my-unreadcount {
     border: none !important;
 }
 
+/*
+フッタ
+*/
+.pagefooter {
+    background-color: var(--color-background-main) !important;
+    background-position: center !important;
+    box-shadow: 0 5px 2px -3px #dbdbdb inset;
+    width: 100% !important;
+    margin: 0 auto 0 !important;
+}
+
+.pagefooter #systemversion {
+    left: calc((100% - 950px) / 2) !important;
+}
+
+.pagefooter .footer-manual-link {
+    left: calc((100% - 950px) / 2 + 260px) !important;
+}
