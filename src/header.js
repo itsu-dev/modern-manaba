@@ -6,7 +6,7 @@ window.onload = () => {
     mypage.innerHTML = 'マイページ';
 
     let mynaviButtonHome = document.getElementsByClassName("mynavi-button-home")[0];
-    mynaviButtonHome.setAttribute('onclick', "window.location.href = 'home';")
+    mynaviButtonHome.setAttribute('onclick', "window.location.href = 'home';");
     mynaviButtonHome.innerHTML = '';
     mynaviButtonHome.appendChild(mypage);
 
@@ -15,7 +15,7 @@ window.onload = () => {
     course.innerHTML = 'コース';
 
     let mynaviButtonCourse = document.getElementsByClassName("mynavi-button-course")[0];
-    mynaviButtonCourse.setAttribute('onclick', "window.location.href = 'home_course';")
+    mynaviButtonCourse.setAttribute('onclick', "window.location.href = 'home_course';");
     mynaviButtonCourse.innerHTML = '';
     mynaviButtonCourse.appendChild(course);
 
@@ -24,7 +24,7 @@ window.onload = () => {
     portfolio.innerHTML = 'ポートフォリオ';
 
     let mynaviButtonPortfolio = document.getElementsByClassName("mynavi-button-portfolio")[0];
-    mynaviButtonPortfolio.setAttribute('onclick', "window.location.href = 'home_coursetable';")
+    mynaviButtonPortfolio.setAttribute('onclick', "window.location.href = 'home_coursetable';");
     mynaviButtonPortfolio.innerHTML = '';
     mynaviButtonPortfolio.appendChild(portfolio);
 
@@ -34,7 +34,7 @@ window.onload = () => {
 
     let div1 = document.createElement('div');
     div1.classList.add('mynavi-button-home');
-    div1.setAttribute('onclick', "window.location.href = 'home_library_query';")
+    div1.setAttribute('onclick', "window.location.href = 'home_library_query';");
     div1.appendChild(unsubmitted);
 
     let reminder = document.createElement('span');
@@ -62,12 +62,12 @@ window.onload = () => {
     if (document.getElementsByClassName("mylang-ja")[0]) {
         let mylangJa = document.getElementsByClassName("mylang-ja")[0];
         mylangJa.innerHTML = '';
-        mylangJa.setAttribute('onclick', "window.location.href = 'home_lang_en';")
+        mylangJa.setAttribute('onclick', "window.location.href = 'home_lang_en';");
         mylangJa.appendChild(english);
     } else {
         let mylangEn = document.getElementsByClassName("mylang-en")[0];
         mylangEn.innerHTML = '';
-        mylangEn.setAttribute('onclick', "window.location.href = 'home_lang_ja';")
+        mylangEn.setAttribute('onclick', "window.location.href = 'home_lang_ja';");
         mylangEn.appendChild(japanese);
     }
 
@@ -78,7 +78,7 @@ window.onload = () => {
 
     let memoDiv = document.createElement('div');
     memoDiv.classList.add('memo-div');
-    memoDiv.setAttribute('onclick', "window.location.href = 'home_usermemo';")
+    memoDiv.setAttribute('onclick', "window.location.href = 'home_usermemo';");
     memoDiv.appendChild(memo);
 
     let respon = document.createElement('img');
@@ -88,7 +88,7 @@ window.onload = () => {
 
     let responDiv = document.createElement('div');
     responDiv.classList.add('respon-div');
-    responDiv.setAttribute('onclick', "window.location.href = 'https://atmnb.tsukuba.ac.jp/attend/tsukuba?relogin=1';")
+    responDiv.setAttribute('onclick', "window.location.href = 'https://atmnb.tsukuba.ac.jp/attend/tsukuba?relogin=1';");
     responDiv.appendChild(respon);
 
     let mybuttonMenu = document.getElementById('mybutton-menu');
@@ -136,7 +136,7 @@ window.onload = () => {
             courseMenuSurvey.appendChild(courseMenuSurveySpan);
             if (surveyCount !== null) courseMenuSurvey.appendChild(surveyCount);
 
-            //　レポート
+            // レポート
             let courseMenuReport = document.getElementsByClassName("course-menu-report")[0];
             let courseMenuReportSpan = document.createElement("span");
             const reportCount = document.getElementById("reportstatus");
