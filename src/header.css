@@ -17,6 +17,8 @@ body {
     --color-table-border: #bcbcbc;
     --color-unreadcount-background: #ef5350;
 
+    --school-header-image: url('chrome-extension://__MSG_@@extension_id__/images/header-school-light.gif');
+
     background: var(--color-background-main) !important;
 }
 
@@ -41,7 +43,10 @@ body {
         --color-table-border: #000a12;
         --color-unreadcount-background: #ef5350;
 
+        --school-header-image: url('chrome-extension://__MSG_@@extension_id__/images/header-school-dark.gif');
+
         color: #f4f4f4 !important;
+
 
         background: var(--color-background-main) !important;
     }
@@ -50,8 +55,7 @@ body {
         color: #baddf9 !important;
     }
 }
-
- */
+*/
 
 .pagebody {
     width: 100% !important;
@@ -61,6 +65,7 @@ body {
 
 #orgheader {
     background-color: var(--color-background-main) !important;
+    background-image: var(--school-header-image) !important;
 }
 
 #mynavi {
