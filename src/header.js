@@ -43,7 +43,7 @@ window.onload = () => {
 
     let div2 = document.createElement('div');
     div2.classList.add('mynavi-button-home');
-    div2.setAttribute('onclick', "window.location.href = 'home_library_reminder';")
+    div2.setAttribute('onclick', "window.location.href = 'home_library_reminder';");
     div2.appendChild(reminder);
 
     let mynavi = document.getElementById("mynavi");
@@ -58,19 +58,6 @@ window.onload = () => {
     let japanese = document.createElement('span');
     japanese.classList.add('mynavi-button-a');
     japanese.innerHTML = '日本語';
-
-    if (document.getElementsByClassName("mylang-ja")[0]) {
-        let mylangJa = document.getElementsByClassName("mylang-ja")[0];
-        mylangJa.innerHTML = '';
-        mylangJa.setAttribute('onclick', "window.location.href = 'home_lang_en';");
-        mylangJa.appendChild(english);
-    } else {
-        let mylangEn = document.getElementsByClassName("mylang-en")[0];
-        mylangEn.innerHTML = '';
-        mylangEn.setAttribute('onclick', "window.location.href = 'home_lang_ja';");
-        mylangEn.appendChild(japanese);
-    }
-
 
     let memo = document.createElement('span');
     memo.classList.add('mynavi-button-a');
@@ -97,6 +84,28 @@ window.onload = () => {
     mybuttonMenu.appendChild(memoDiv);
 
     document.getElementsByClassName("align")[0].remove();
+
+    // 言語によってどのボタンを割り当てるか決定
+    if (document.getElementsByClassName("mylang-ja")[0]) {
+        let mylangJa = document.getElementsByClassName("mylang-ja")[0];
+        mylangJa.innerHTML = '';
+        mylangJa.setAttribute('onclick', "window.location.href = 'home_lang_en';");
+        mylangJa.appendChild(english);
+    } else {
+        let mylangEn = document.getElementsByClassName("mylang-en")[0];
+        mylangEn.innerHTML = '';
+        mylangEn.setAttribute('onclick', "window.location.href = 'home_lang_ja';");
+        mylangEn.appendChild(japanese);
+        // ヘッダの表記を英語に変える
+        document.getElementsByClassName('mynavi-button-home')[0].childNodes[0].innerText = 'My page';
+        document.getElementsByClassName('mynavi-button-course')[0].childNodes[0].innerText = 'Courses';
+        document.getElementsByClassName('mynavi-button-portfolio')[0].childNodes[0].innerText = 'Portfolio';
+        document.getElementsByClassName("memo-div")[0].childNodes[0].innerText = "Memos"
+        unsubmitted.innerHTML = 'Assignments';
+        reminder.innerHTML = 'Reminders';
+    }
+
+
 
     document.documentElement.style.visibility = '';
 
@@ -186,6 +195,17 @@ window.onload = () => {
             courseMenuCourseContents.setAttribute("onclick", "window.location.href = '" + courseMenuCourseContents.getElementsByTagName("a")[0].getAttribute("href") + "';");
             courseMenuCourseContents.innerHTML = '';
             courseMenuCourseContents.appendChild(courseMenuCourseContentsSpan);
+        }
+        // 言語が英語か確認
+        if (document.getElementsByClassName("mylang-en")[0]) {
+            // メニューの表記を英語に変える
+            document.getElementsByClassName('course-menu-query')[0].childNodes[0].innerText = 'Tests';
+            document.getElementsByClassName('course-menu-survey')[0].childNodes[0].innerText = 'Surveys';
+            document.getElementsByClassName('course-menu-report')[0].childNodes[0].innerText = 'Assignments';
+            document.getElementsByClassName('course-menu-project')[0].childNodes[0].innerText = 'Projects';
+            document.getElementsByClassName('course-menu-grade')[0].childNodes[0].innerText = 'Grades';
+            document.getElementsByClassName('course-menu-bbs')[0].childNodes[0].innerText = 'Forum';
+            document.getElementsByClassName('course-menu-coursecontents')[0].childNodes[0].innerText = 'Resources';
         }
     }
 
