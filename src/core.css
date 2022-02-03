@@ -15,6 +15,7 @@ body {
     --color-menubar-hover: #66bb6a;
     --color-table-grade-bar: #2e7d32;
     --color-table-border: #bcbcbc;
+    --color-table-border-2: #bcbcbc;
     --color-unreadcount-background: #ef5350;
 
     background: var(--color-background-main) !important;
@@ -39,6 +40,7 @@ body {
         --color-menubar-hover: #66bb6a;
         --color-table-grade-bar: #2e7d32;
         --color-table-border: #000a12;
+        --color-table-border-2: #eeeeee;
         --color-unreadcount-background: #ef5350;
 
         color: #f4f4f4 !important;
@@ -108,7 +110,7 @@ body {
     margin: 0 20px 0 15px !important;
 }
 
-.my-infolist, .info-list-card, .info-list-cardl, .info-list-cardr, .top-contents-list, .groupnews-msg, .contentbody-l {
+.my-infolist, .info-list-card, .info-list-cardl, .info-list-cardr, .top-contents-list, .groupnews-msg, .contentbody-l, .contentbody-s {
     padding: 12px !important;
     padding-left: 16px !important;
     padding-right: 16px !important;
@@ -123,7 +125,8 @@ body {
     padding: 0 !important;
 }
 
-.my-infolist-header h2, .info-list-card-header h2, .top-contents-list-header h2, .msg-body h2, .contentbody-l h1 {
+.my-infolist-header h2, .info-list-card-header h2, .top-contents-list-header h2, .msg-body h2, .contentbody-l h1, .contentbody-s h1 {
+    border-left: none !important;
     color: var(--color-title-2) !important;
     font-size: 1.8em !important;
     font-weight: normal !important;
@@ -507,6 +510,47 @@ table.gradelist td.gradebar {
  */
 div.dates {
     color: var(--color-text-disabled) !important;
+}
+
+/*
+ポートフォリオ
+*/
+
+.collist-year-box {
+    border-color: var(--color-table-border-2) !important;
+}
+
+.collist-course .collist-courseinfo {
+    border-color: var(--color-table-border-2) !important;
+}
+
+span.collyear-open {
+    background-image: none !important;
+}
+
+.collist-year {
+    background-image: none !important;
+    background-color: var(--color-card-background) !important;
+    border: solid !important;
+    border-color: var(--color-table-border-2) !important;
+    border-width: 2px !important;
+    width: auto !important;
+}
+
+.collist-year h2, .collist-course-teacher, .colllist-coursedata-info {
+    color: var(--color-title-2) !important;
+}
+
+.collist-courseinfo {
+    background-color: var(--color-card-background) !important;
+}
+
+.collist tr:hover td {
+    background-color: var(--color-background-main) !important;
+}
+
+td.colltitle, td.colldate, td.collcomment, td.colllink-right {
+    border-color: var(--color-table-border-2) !important;
 }
 
 /*
