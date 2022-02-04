@@ -17,6 +17,7 @@ body {
     --color-table-border: #bcbcbc;
     --color-table-border-2: #bcbcbc;
     --color-unreadcount-background: #ef5350;
+    --color-default-font: #000000;
 
     background: var(--color-background-main) !important;
 }
@@ -42,6 +43,7 @@ body {
         --color-table-border: #000a12;
         --color-table-border-2: #eeeeee;
         --color-unreadcount-background: #ef5350;
+        --color-default-font: #ffffff;
 
         color: #f4f4f4 !important;
 
@@ -139,7 +141,7 @@ body {
     padding: 0 !important;
 }
 
-.my-infolist-header h2, .info-list-card-header h2, .top-contents-list-header h2, .msg-body h2, .contentbody-l h1, .contentbody-s h1 {
+.my-infolist-header h2, .info-list-card-header h2, .top-contents-list-header h2, .msg-body h2, .contentbody-l h1, .contentbody-s h1, .msg h2 {
     border-left: none !important;
     color: var(--color-title-2) !important;
     font-size: 1.8em !important;
@@ -582,6 +584,13 @@ td.colltitle, td.colldate, td.collcomment, td.colllink-right {
 */
 td input[type="submit"] {
     margin-left: 16px !important;
+    color: var(--color-default-font) !important;
+    background: var(--color-card-background) !important;
+    box-shadow: 2px 2px 4px var(--color-card-shadow) !important;
+}
+
+td input[type="submit"]:hover {
+    background: var(--color-background-main) !important;
 }
 
 .contentbody-l .navigator {
@@ -594,6 +603,15 @@ td input[type="submit"] {
     margin-bottom: 11px !important;
 }
 
+.contentbody-l .navigator a {
+    background: transparent !important;
+}
+
+.contentbody-l .navigator .pager-now {
+    background: transparent !important;
+    color: var(--color-default-font) !important;
+}
+
 
 form .description {
     box-sizing: border-box;
@@ -603,6 +621,13 @@ form .description {
     border-radius: 0 !important;
     box-shadow: 2px 2px 4px var(--color-card-shadow);
     margin: 16px !important;
+}
+
+/*
+リマインダのポップアップ
+*/
+.dm-panel-inpagebody .msg, .dm-panel-body, .dm-panel-footer {
+    background: var(--color-background-main) !important;
 }
 
 @media screen and (max-width: 1100px) {
