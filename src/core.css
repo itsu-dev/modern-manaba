@@ -51,6 +51,16 @@ body {
     a {
         color: #baddf9 !important;
     }
+
+    .course-card-title a {
+        background-color: transparent !important;
+    }
+
+
+    .pagebody .section .coursecard:hover a {
+        background-color: transparent !important;
+    }
+    
 }
 */
 
@@ -73,6 +83,10 @@ body {
     border: none !important;
     margin: 0 !important;
     padding: 0 !important;
+}
+
+.pagebody .section .coursecard:hover {
+    background-color: var(--color-background-main) !important;
 }
 
 .contentbody-left {
@@ -139,6 +153,10 @@ body {
     margin: 0 !important;
     margin-top: 12px !important;
     border: none !important;
+}
+
+.pagebody .top-contents-list {
+    background-color: var(--color-card-background) !important;
 }
 
 .my-infolist-centernews, .my-infolist-mycourses {
@@ -222,6 +240,10 @@ table.stdlist tr td, table.stdlist tr th {
     border-width: 1px !important;
     border-top: none !important;
     border-bottom: none !important;
+}
+
+table.stdlist tr:hover td {
+    background-color: var(--color-background-main) !important;
 }
 
 ul.infolist-tab {
@@ -347,7 +369,7 @@ ul.infolist-tab li.current a {
 }
 
 .top-contents-list-body {
-    background: white !important;
+    background-color: var(--color-card-background) !important;
     margin-top: 16px !important;
 }
 
@@ -364,12 +386,14 @@ ul.infolist-tab li.current a {
     margin-right: 16px !important;
     border: var(--color-card-border-white) solid 1px !important;
     box-shadow: 2px 2px 6px var(--color-card-shadow) !important;
+    background-color: var(--color-card-background) !important;
 }
 
 /*
 （共通）カード右下の○○一覧
  */
 .showmore {
+    background: var(--color-card-background) !important;
     padding: 4px 0 0 !important;
 }
 
@@ -562,10 +586,9 @@ td input[type="submit"] {
 
 .contentbody-l .navigator {
     font-size: 1.0em !important;
-    background: var(color-card-background) !important;
-    border-left: 1px solid #ccc !important;
-    border-right: none !important;
-    box-shadow: 2px 2px 4px #bdbdbd !important;
+    background: var(--color-card-background) !important;
+    border: 1px solid var(--color-table-border) !important;
+    box-shadow: 2px 2px 4px var(--color-card-shadow) !important;
     padding-bottom: 5px !important;
     margin-top: 11px !important;
     margin-bottom: 11px !important;
@@ -576,7 +599,7 @@ form .description {
     box-sizing: border-box;
     background: var(--color-card-background) !important;
     padding: 12px !important;
-    border: #b6c2b7 solid 1px !important;
+    border: var(--color-table-border) solid 1px !important;
     border-radius: 0 !important;
     box-shadow: 2px 2px 4px var(--color-card-shadow);
     margin: 16px !important;
