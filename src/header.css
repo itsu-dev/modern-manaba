@@ -54,6 +54,10 @@ body {
     a {
         color: #baddf9 !important;
     }
+    
+    .pagefooter {
+    background-image: url(chrome-extension://__MSG_@@extension_id__/images/bg-footerV3-dark.png) !important;
+  }
 }
 */
 
@@ -273,7 +277,7 @@ span.my-unreadcount {
 .pagefooter {
     background-color: var(--color-background-main) !important;
     background-position: center !important;
-    box-shadow: 0 5px 2px -3px #dbdbdb inset;
+    box-shadow: 0 5px 2px -3px inset var(--color-card-shadow) !important;
     width: 100% !important;
     margin: 0 auto 0 !important;
 }
