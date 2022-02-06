@@ -28,6 +28,9 @@
         "https://manaba.tsukuba.ac.jp/ct/course_*",
         "https://manaba.tsukuba.ac.jp/ct/home*"
       ],
+      "exclude_matches": [
+        "https://manaba.tsukuba.ac.jp/ct/course_*_project_*_teamtop_*"
+      ],
       "css": [
         "core.css"
       ],

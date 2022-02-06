@@ -362,6 +362,11 @@ ul.infolist-tab li.current a {
     height: auto !important;
 }
 
+.project-header-s {
+    background: transparent !important;
+    border-bottom: none !important;
+}
+
 /*
 コンテンツ
  */
@@ -624,9 +629,9 @@ form .description {
 }
 
 /*
-リマインダのポップアップ
+リマインダやプロジェクトページのポップアップ
 */
-.dm-panel-inpagebody .msg, .dm-panel-body, .dm-panel-footer {
+  .dm-panel-inpagebody .msg, .dm-panel-body, .dm-panel-footer, .tpanel_frame .msg-body {
     background: var(--color-background-main) !important;
 }
 
