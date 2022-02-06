@@ -213,5 +213,17 @@ window.onload = () => {
         td.setAttribute('style', '');
     }
 
+    const url = location.href;
+    const examPageRegex = new RegExp('https://manaba.tsukuba.ac.jp/ct/home_library_query|https://manaba\.tsukuba\.ac\.jp/ct/course_[0-9]+_(query|survey|report)');
+    // Manaba Enhancedがインストールされていて、提出期限によって色付けされるページなら
+    if (document.getElementsByClassName("mylinks-sep").length === 3 && examPageRegex.test(url)) {
+        // テーブルの背景色の変更を無効化する
+        let styleSheets = document.styleSheets;
+        let styleSheet = styleSheets[styleSheets.length - 1];
+        styleSheet.insertRule( 'table tr:nth-child(even) { background: transparent !important; }', styleSheet.cssRules.length);
+        styleSheet.insertRule( 'table tr:nth-child(odd) { background: transparent !important; }', styleSheet.cssRules.length);
+    }
+
+
     document.getElementById("mylinks");
 }
