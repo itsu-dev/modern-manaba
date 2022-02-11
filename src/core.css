@@ -11,6 +11,9 @@ body[theme="light"] {
     --color-card-border-alert: #c48b9f;
     --color-card-background-memo: #fff9c4;
     --color-card-border-memo: #cbc693;
+    --color-card-border-description: #b6c2b7;
+    --color-card-contents-background: #ffffff;
+    --color-card-contents-border: #e0e0e0;
     --color-menubar-background: #263238;
     --color-menubar-hover: #66bb6a;
     --color-table-grade-bar: #2e7d32;
@@ -35,6 +38,9 @@ body[theme="dark"] {
     --color-card-border-alert: #CF6679;
     --color-card-background-memo: #fff176;
     --color-card-border-memo: #fff176;
+    --color-card-border-description: #272727;
+    --color-card-contents-background: #2c2c2c;
+    --color-card-contents-border: #2c2c2c;
     --color-menubar-background: #272727;
     --color-menubar-hover: #66bb6a;
     --color-table-grade-bar: #2e7d32;
@@ -290,7 +296,7 @@ ul.infolist-tab li.current a {
     box-sizing: border-box;
     padding: 12px !important;
     background: var(--color-background-theme) !important;
-    border: #b6c2b7 solid 1px !important;
+    border: var(--color-card-border-description) solid 1px !important;
     border-radius: 0 !important;
     box-shadow: 2px 2px 4px var(--color-card-shadow);
     margin: 16px !important;
@@ -389,9 +395,9 @@ ul.infolist-tab li.current a {
 .contents-card {
     margin-bottom: 16px !important;
     margin-right: 16px !important;
-    border: var(--color-card-border-white) solid 1px !important;
+    border: var(--color-card-contents-border) solid 1px !important;
     box-shadow: 2px 2px 6px var(--color-card-shadow) !important;
-    background-color: var(--color-card-background) !important;
+    background-color: var(--color-card-contents-background) !important;
 }
 
 /*
