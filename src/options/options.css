@@ -1,0 +1,106 @@
+body[theme="light"] {
+    --color-background-main: #f4f5f7;
+    --color-background-theme: #e8f5e9;
+    --color-title-2: #1b5e20;
+    --color-card-shadow: #bdbdbd;
+    --color-card-background: #ffffff;
+    --color-card-border-white: #e0e0e0;
+
+    background: var(--color-background-main);
+}
+
+body[theme="dark"] {
+    --color-background-main: #000a12;
+    --color-background-theme: #445963;
+    --color-title-2: #dcedc8;
+    --color-card-shadow: #000000;
+    --color-card-background: #102027;
+    --color-card-border-white: #445963;
+
+    color: #f4f4f4 !important;
+    background: var(--color-background-main);
+
+}
+
+h1 {
+    color: var(--color-title-2);
+}
+
+section {
+    width: 60%;
+    padding: 1.5rem;
+    padding-bottom: 100px;
+    margin: auto;
+    border-radius: 0.5rem;
+    border-color: var(--color-card-border);
+    background: var(--color-card-background);
+    box-shadow: 2px 2px 4px var(--color-card-shadow);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.switch-title {
+    float: left;
+    margin-top: 5px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 60px;
+    height: 34px;
+    margin-bottom: 10px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.switch-title {
+    font-size: 1.2rem;
+}
