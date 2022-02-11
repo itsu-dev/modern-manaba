@@ -13,7 +13,7 @@
 </p>
 
 --- 
-![](screenshot.png)
+![](screenshot0.png)
 
 - [x] ヘッダの変更
 - [x] トップページの変更
