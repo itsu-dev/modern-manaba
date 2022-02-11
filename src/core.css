@@ -23,24 +23,24 @@ body[theme="light"] {
 }
 
 body[theme="dark"] {
-    --color-background-main: #000a12;
-    --color-background-theme: #445963;
+    --color-background-main: #121212;
+    --color-background-theme: #272727;
     --color-title-2: #dcedc8;
+    --color-card-border-white: #212121;
     --color-title-3: #aed681;
     --color-text-disabled: #c1c1c1;
-    --color-card-shadow: #000000;
-    --color-card-background: #102027;
-    --color-card-border-white: #445963;
-    --color-card-background-alert: #ffebee;
-    --color-card-border-alert: #ccb9bc;
-    --color-card-background-memo: #fff9c4;
-    --color-card-border-memo: #cccab5;
-    --color-menubar-background: #102027;
+    --color-card-shadow: transparent;
+    --color-card-background: #212121;
+    --color-card-background-alert: #CF6679;
+    --color-card-border-alert: #CF6679;
+    --color-card-background-memo: #fff176;
+    --color-card-border-memo: #fff176;
+    --color-menubar-background: #272727;
     --color-menubar-hover: #66bb6a;
     --color-table-grade-bar: #2e7d32;
-    --color-table-border: #000a12;
+    --color-table-border: #212121;
     --color-table-border-2: #eeeeee;
-    --color-unreadcount-background: #ef5350;
+    --color-unreadcount-background: #CF6679;
     --color-default-font: #ffffff;
 
     color: #f4f4f4 !important;
@@ -57,7 +57,7 @@ body[theme="dark"] .course-card-title a {
 }
 
 body[theme="dark"] .alertlist a {
-    color: red !important;
+    color: #f4f4f4 !important;
 }
 
 body[theme="dark"] .pagebody .section .coursecard:hover a {
