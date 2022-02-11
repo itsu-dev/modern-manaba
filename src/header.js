@@ -2,6 +2,14 @@ document.documentElement.style.visibility = 'hidden';
 
 let defaults = {darkmode: false};
 
+const openSettings = () => {
+    if (chrome.runtime.openOptionsPage) {
+        chrome.runtime.openOptionsPage();
+    } else {
+        window.open(chrome.runtime.getURL('options/options.html'), "_blank", "noreferrer");
+    }
+}
+
 window.onload = () => {
 
     // オプションページから設定を読み込む
@@ -9,6 +17,25 @@ window.onload = () => {
         document.body.setAttribute('theme', 'light');
         if(items.darkmode)  document.body.setAttribute('theme', 'dark');
     });
+
+    // オプションページへのリンクを挿入
+    if (document.getElementById('mylinks')) {
+        let options = document.createElement('span');
+        let optionsA = document.createElement('a');
+        optionsA.href = 'javascript:void(0);';
+        optionsA.onclick = openSettings;
+        optionsA.innerHTML = 'Modern manaba';
+        optionsA.setAttribute('rel', 'noopener noreferer');
+        optionsA.setAttribute('style', 'cursor: pointer;');
+        optionsA.setAttribute('target', '_blank');
+        options.appendChild(optionsA);
+        document.getElementById('mylinks').insertBefore(options, document.getElementById('mylinks-logout'));
+
+        let sep = document.createElement('span');
+        sep.innerHTML = '|';
+        sep.classList.add('mylinks-sep');
+        document.getElementById('mylinks').insertBefore(sep, document.getElementById('mylinks-logout'));
+    }
 
     let mypage = document.createElement('span');
     mypage.classList.add('mynavi-button-a');
@@ -100,6 +127,7 @@ window.onload = () => {
         mylangJa.innerHTML = '';
         mylangJa.setAttribute('onclick', "window.location.href = 'home_lang_en';");
         mylangJa.appendChild(english);
+
     } else {
         let mylangEn = document.getElementsByClassName("mylang-en")[0];
         mylangEn.innerHTML = '';
@@ -205,6 +233,7 @@ window.onload = () => {
             courseMenuCourseContents.innerHTML = '';
             courseMenuCourseContents.appendChild(courseMenuCourseContentsSpan);
         }
+
         // 言語が英語か確認
         if (document.getElementsByClassName("mylang-en")[0]) {
             // メニューの表記を英語に変える
@@ -222,5 +251,6 @@ window.onload = () => {
         td.setAttribute('style', '');
     }
 
-    document.getElementById("mylinks");
 }
+
+
