@@ -401,6 +401,25 @@ ul.infolist-tab li.current a {
 }
 
 /*
+コンテンツ一覧の表
+ */
+table.contentslist .info-contents {
+    background-color: unset !important;
+}
+
+table.contentslist th, table.contentslist td, table.contentslist {
+    border: none !important;
+}
+
+table.contentslist tr:hover th {
+    background-color: var(--color-background-main) !important;
+}
+
+table.contentslist tr.hilitecolor td, table.contentslist tr.hilitecolor .info-contents, table.contentslist tr.hilitecolor th {
+    background-color: var(--color-background-main) !important;
+}
+
+/*
 （共通）カード右下の○○一覧
  */
 .showmore {
