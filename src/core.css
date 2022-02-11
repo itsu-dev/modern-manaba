@@ -52,6 +52,7 @@ body[theme="dark"] {
     color: #f4f4f4 !important;
 
     background: var(--color-background-main) !important;
+
 }
 
 body[theme="dark"] a {
@@ -68,6 +69,19 @@ body[theme="dark"] .alertlist a {
 
 body[theme="dark"] .pagebody .section .coursecard:hover a {
     background-color: transparent !important;
+}
+
+
+body[theme="dark"] table.stdlist tr.seven-days-before {
+    background-color: #385638 !important;
+}
+
+body[theme="dark"] table.stdlist tr.three-days-before {
+    background-color: #636228 !important;
+}
+
+body[theme="dark"] table.stdlist tr.one-day-before {
+    background-color: #632828 !important;
 }
 
 .pagebody, .home {
