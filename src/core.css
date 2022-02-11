@@ -1,4 +1,4 @@
-body {
+body[theme="light"] {
     --color-background-main: #f4f5f7;
     --color-background-theme: #e8f5e9;
     --color-title-2: #1b5e20;
@@ -22,49 +22,47 @@ body {
     background: var(--color-background-main) !important;
 }
 
-/*
-@media screen and (prefers-color-scheme: dark) {
-    body {
-        --color-background-main: #000a12;
-        --color-background-theme: #445963;
-        --color-title-2: #dcedc8;
-        --color-title-3: #aed681;
-        --color-text-disabled: #c1c1c1;
-        --color-card-shadow: #000000;
-        --color-card-background: #102027;
-        --color-card-border-white: #445963;
-        --color-card-background-alert: #ffebee;
-        --color-card-border-alert: #ccb9bc;
-        --color-card-background-memo: #fff9c4;
-        --color-card-border-memo: #cccab5;
-        --color-menubar-background: #102027;
-        --color-menubar-hover: #66bb6a;
-        --color-table-grade-bar: #2e7d32;
-        --color-table-border: #000a12;
-        --color-table-border-2: #eeeeee;
-        --color-unreadcount-background: #ef5350;
-        --color-default-font: #ffffff;
+body[theme="dark"] {
+    --color-background-main: #000a12;
+    --color-background-theme: #445963;
+    --color-title-2: #dcedc8;
+    --color-title-3: #aed681;
+    --color-text-disabled: #c1c1c1;
+    --color-card-shadow: #000000;
+    --color-card-background: #102027;
+    --color-card-border-white: #445963;
+    --color-card-background-alert: #ffebee;
+    --color-card-border-alert: #ccb9bc;
+    --color-card-background-memo: #fff9c4;
+    --color-card-border-memo: #cccab5;
+    --color-menubar-background: #102027;
+    --color-menubar-hover: #66bb6a;
+    --color-table-grade-bar: #2e7d32;
+    --color-table-border: #000a12;
+    --color-table-border-2: #eeeeee;
+    --color-unreadcount-background: #ef5350;
+    --color-default-font: #ffffff;
 
-        color: #f4f4f4 !important;
+    color: #f4f4f4 !important;
 
-        background: var(--color-background-main) !important;
-    }
-
-    a {
-        color: #baddf9 !important;
-    }
-
-    .course-card-title a {
-        background-color: transparent !important;
-    }
-
-
-    .pagebody .section .coursecard:hover a {
-        background-color: transparent !important;
-    }
-    
+    background: var(--color-background-main) !important;
 }
-*/
+
+body[theme="dark"] a {
+    color: #baddf9 !important;
+}
+
+body[theme="dark"] .course-card-title a {
+    background-color: transparent !important;
+}
+
+body[theme="dark"] .alertlist a {
+    color: red !important;
+}
+
+body[theme="dark"] .pagebody .section .coursecard:hover a {
+    background-color: transparent !important;
+}
 
 .pagebody, .home {
     width: 100% !important;
