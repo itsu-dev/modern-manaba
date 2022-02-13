@@ -570,6 +570,14 @@ div.form {
 
 }
 
+.contentbody-s {
+    margin-top: 16px !important;
+}
+
+.contentbody-s h1 {
+    margin-top: 0 !important;
+}
+
 /*
 お知らせ
  */
