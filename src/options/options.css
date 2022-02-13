@@ -1,4 +1,5 @@
 body[theme="light"] {
+    --color-text: #1e1e1e;
     --color-background-main: #f4f5f7;
     --color-background-theme: #e8f5e9;
     --color-title-2: #1b5e20;
@@ -6,10 +7,12 @@ body[theme="light"] {
     --color-card-background: #ffffff;
     --color-card-border-white: #e0e0e0;
 
+    color: var(--color-text) !important;
     background: var(--color-background-main);
 }
 
 body[theme="dark"] {
+    --color-text: #f4f4f4;
     --color-background-main: #121212;
     --color-background-theme: #272727;
     --color-title-2: #dcedc8;
@@ -19,7 +22,7 @@ body[theme="dark"] {
     --color-card-shadow: transparent;
     --color-card-background: #212121;
 
-    color: #f4f4f4 !important;
+    color: var(--color-text) !important;
     background: var(--color-background-main);
 }
 
