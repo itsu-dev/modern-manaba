@@ -49,7 +49,7 @@ body[theme="dark"] {
     --color-menubar-hover: #66bb6a;
     --color-table-grade-bar: #2e7d32;
     --color-table-border: #212121;
-    --color-table-border-2: #eeeeee;
+    --color-table-border-2: #212121;
     --color-unreadcount-background: #CF6679;
     --color-default-font: #ffffff;
 
@@ -587,6 +587,13 @@ div.dates {
 /*
 ポートフォリオ
 */
+.pagebody .contentbody-s h1 {
+    border: none !important;
+}
+
+.collist .collist-year h2 {
+    padding-left: 0 !important;
+}
 
 .collist-year-box {
     border-color: var(--color-table-border-2) !important;
