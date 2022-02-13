@@ -12,7 +12,7 @@ body[theme="light"] {
 }
 
 body[theme="dark"] {
-    --color-text: #f4f4f4;
+    --color-text: #e6e6e6;
     --color-background-main: #121212;
     --color-background-theme: #272727;
     --color-title-2: #dcedc8;

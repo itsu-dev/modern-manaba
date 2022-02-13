@@ -29,7 +29,7 @@ body[theme="light"] {
 }
 
 body[theme="dark"] {
-    --color-text: #f4f4f4;
+    --color-text: #e6e6e6;
     --color-background-main: #121212;
     --color-background-theme: #272727;
     --color-title-2: #dcedc8;
@@ -68,7 +68,7 @@ body[theme="dark"] .course-card-title a {
 }
 
 body[theme="dark"] .alertlist a {
-    color: #f4f4f4 !important;
+    color: var(--color-text) !important;
 }
 
 body[theme="dark"] .pagebody .section .coursecard:hover a {
