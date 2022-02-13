@@ -88,6 +88,23 @@ body[theme="dark"] table.stdlist tr.one-day-before {
     background-color: #632828 !important;
 }
 
+button, input[type="submit"] {
+    background-color: transparent !important;
+    padding: 8px !important;
+    color: var(--color-title-3) !important;
+    font-weight: normal !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+
+button:hover {
+    background-color: var(--color-background-theme) !important;
+}
+
+input[type="submit"] {
+    background-color: var(--color-background-theme) !important;
+}
+
 .pagebody, .home {
     width: 100% !important;
 }
