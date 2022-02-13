@@ -212,6 +212,22 @@ div.news-title, .my-infolist-event td.event-title a {
     white-space: normal !important;
 }
 
+.my-infolist-event td, .my-infolist-event tr.bordertop td {
+    border: none !important;
+}
+
+.my-infolist-event tr td {
+    padding: 4px 0 !important;
+}
+
+.my-infolist-event tr td.eventlist-day {
+    padding-right: 4px !important;
+}
+
+.my-infolist-event td.event-title a {
+    padding-left: 0 !important;
+}
+
 .my-infolist-event, .my-infolist-tips {
     width: calc(100% - 58px) !important;
     margin: 0 !important;
