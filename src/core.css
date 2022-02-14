@@ -578,6 +578,22 @@ div.form {
     margin-top: 0 !important;
 }
 
+
+/*
+レポート提出ページ
+*/
+.contentbody-l div.form   {
+    background: var(--color-card-background) !important;
+}
+
+.textarea-char-counter, .textarea-word-counter {
+    color: var(--color-default-font) !important;
+}
+
+table.stdlist-report tr:hover th {
+    background-color: var(--color-background-main) !important;
+}
+
 /*
 お知らせ
  */
