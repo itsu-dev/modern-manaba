@@ -383,6 +383,45 @@ ul.infolist-tab li.current a {
     margin: 0 16px 0 8px !important;
 }
 
+body .articlecontainer h3.articlenumber {
+    background: var(--color-card-background) !important;
+    color: var(--color-title-2) !important;
+}
+
+body .articlecontainer div.articleheader {
+    background: var(--color-card-background) !important;
+}
+
+div.articlecontainer:hover .articlebody, div.articlecontainer:hover .articleheader, div.articlecontainer:hover .articleheader .articlesubject {
+    background: var(--color-card-background) !important;
+}
+
+body div.hilitearticle {
+    background: var(--color-background-main) !important;
+}
+
+.articlesubject {
+    background: var(--color-card-background) !important;
+    border-color: transparent !important;
+}
+
+.button-switchview {
+    background: var(--color-card-background) !important;
+}
+
+div.navigator {
+    background: var(--color-card-background) !important;
+}
+
+
+.contentbody-s div.navigator a {
+    background: var(--color-card-background) !important;
+}
+
+.navigator .bbspagerlinks a {
+    border: none !important;
+}
+
 /*
 コースニュース・スレッドの表
  */
