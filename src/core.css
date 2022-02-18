@@ -643,6 +643,18 @@ div.form {
 }
 
 /*
+小テストの採点結果
+*/
+h3.querysubmitter {
+    background-color: var(--color-card-background) !important;
+    color: var(--color-title-2) !important;
+}
+
+span.queryanswerspan {
+    background: transparent !important;
+}
+
+/*
 レポート提出ページ
 */
 .contentbody-l div.form {
