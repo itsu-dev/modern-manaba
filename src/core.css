@@ -617,11 +617,35 @@ div.form {
     margin-top: 0 !important;
 }
 
+/*
+小テスト,ドリル関連のページ
+*/
+.contentbody-s div.form {
+    background: var(--color-card-background) !important;
+}
+
+.contentbody-s input[type="submit"] {
+    color: var(--color-default-font) !important;
+    background: var(--color-background-main) !important;
+}
+
+.contentbody-s input[type="submit"]:hover {
+    background: var(--color-background-theme) !important;
+}
+
+.reporttext-title {
+    background: var(--color-card-background) !important;
+    color: var(--color-title-2) !important;
+}
+
+.reporttext-body {
+    background: var(--color-card-background) !important;
+}
 
 /*
 レポート提出ページ
 */
-.contentbody-l div.form   {
+.contentbody-l div.form {
     background: var(--color-card-background) !important;
 }
 
@@ -760,10 +784,9 @@ td input[type="submit"]:hover {
     background: transparent !important;
     color: var(--color-default-font) !important;
 }
+
 form .description {
     box-sizing: border-box;
-
-
     background: var(--color-card-background) !important;
     padding: 12px !important;
     border: var(--color-table-border) solid 1px !important;
