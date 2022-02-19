@@ -831,6 +831,36 @@ form .description {
     background: var(--color-card-background) !important;
 }
 
+div.dm-panel-inpagebody .reminder-detail-panel h2 {
+    padding: 16px 16px 0 !important;
+}
+
+/*
+リマインダポップアップの送信先
+ */
+.reminder-detail-panel h3.reminder-detail-panel-to {
+    padding: 0 16px !important;
+}
+
+/*
+リマインダポップアップの送信日時
+ */
+.reminder-detail-send {
+    position: relative !important;
+    right: unset !important;
+    top: unset !important;
+    text-align: right !important;
+    padding-right: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+/*
+リマインダポップアップのテキスト
+ */
+.dm-panel .dm-panel-body {
+    padding: 16px !important;
+}
+
 @media screen and (max-width: 1100px) {
     form .description {
         width: calc(100% / 1.2) !important;
