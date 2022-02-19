@@ -397,7 +397,19 @@ div.articlecontainer:hover .articlebody, div.articlecontainer:hover .articlehead
 }
 
 body div.hilitearticle {
+    background-color: var(--color-background-main) !important;
+}
+
+body div.hilitearticle div.articleheader {
     background: var(--color-background-main) !important;
+}
+
+body div.hilitearticle div.articlebody {
+    background: var(--color-background-main) !important;
+}
+
+body div.hilitearticle div.articleheader div.articlesubject {
+    background-color: var(--color-background-main) !important;
 }
 
 .articlesubject {
@@ -506,6 +518,10 @@ table.contentslist tr:hover th {
 }
 
 table.contentslist tr.hilitecolor td, table.contentslist tr.hilitecolor .info-contents, table.contentslist tr.hilitecolor th {
+    background-color: var(--color-background-main) !important;
+}
+
+table.stdlist tr.hilitecolor td, table.stdlist tr.hilitecolor th {
     background-color: var(--color-background-main) !important;
 }
 
@@ -620,6 +636,7 @@ div.form {
 /*
 小テスト,ドリル関連のページ
 */
+
 .contentbody-s div.form {
     background: var(--color-card-background) !important;
 }
