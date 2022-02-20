@@ -175,9 +175,10 @@ input:checked + .slider:before {
 }
 
 .fa-github {
-    color: var(--color-text);
-    font-size: 1.2rem;
+    fill: var(--color-text);
+    width: 1.2rem;
     margin-right: 8px;
+    text-decoration: none;
 }
 
 .name {
@@ -186,12 +187,14 @@ input:checked + .slider:before {
 }
 
 li.name .fa-github {
-    font-size: 1.5rem !important;
+    width: 1.5rem !important;
+    text-decoration: none;
 }
 
 .fa-twitter {
-    color: #1da1f2;
-    font-size: 1.5rem;
+    fill: #1da1f2;
+    width: 1.5rem;
     margin-left: 8px;
     margin-right: 8px;
+    text-decoration: none;
 }
