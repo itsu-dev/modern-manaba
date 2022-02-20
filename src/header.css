@@ -49,6 +49,7 @@ body[theme="dark"] {
     --color-table-border-2: #eeeeee;
     --color-unreadcount-background: #CF6679;
     --color-default-font: #ffffff;
+    --color-link: #baddf9;
 
     --school-header-image: url('chrome-extension://__MSG_@@extension_id__/images/header-school-dark.gif');
 
@@ -57,7 +58,7 @@ body[theme="dark"] {
 }
 
 body[theme="dark"] a {
-    color: #baddf9 !important;
+    color: var(--color-link) !important;
 }
 
 body[theme="dark"] .pagefooter {
@@ -229,7 +230,21 @@ movieリンク
 }
 
 .pageheader-course-extlink-student {
-    top: 0 !important
+    top: 0 !important;
+    margin-top: -2px !important;
+    margin-right: 32px !important;
+}
+
+/*
+リンクコース確認
+ */
+.pageheader-course .courseheader-courselinklist {
+    color: var(--color-link) !important;
+    height: auto !important;
+    left: unset !important;
+    right: unset !important;
+    top: unset !important;
+    width: auto !important;
 }
 
 /*

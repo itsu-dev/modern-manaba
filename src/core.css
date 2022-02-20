@@ -52,6 +52,7 @@ body[theme="dark"] {
     --color-table-border-2: #212121;
     --color-unreadcount-background: #CF6679;
     --color-default-font: #ffffff;
+    --color-link: #baddf9;
 
     color: var(--color-text) !important;
 
@@ -60,7 +61,7 @@ body[theme="dark"] {
 }
 
 body[theme="dark"] a {
-    color: #baddf9 !important;
+    color: var(--color-link) !important;
 }
 
 body[theme="dark"] .course-card-title a {
@@ -165,7 +166,7 @@ input[type="submit"] {
     margin: 0 20px 0 15px !important;
 }
 
-.my-infolist, .info-list-card, .info-list-cardl, .info-list-cardr, .top-contents-list, .groupnews-msg, .contentbody-l, .contentbody-s, div.articlebody .contentbody-left, div.articlebody .contentbody-right {
+.my-infolist, .info-list-card, .info-list-cardl, .info-list-cardr, .top-contents-list, .groupnews-msg, .contentbody-l, .contentbody-s, div.articlebody .contentbody-left, div.articlebody .contentbody-right, .pageheader-course .courseheader-courselinklist-detail {
     padding: 12px !important;
     padding-left: 16px !important;
     padding-right: 16px !important;
@@ -1051,6 +1052,27 @@ table.contentspagelist tr:nth-child(2n) {
 div.contentbody-right table.contentspagelist tr:hover td {
     background-color: unset !important;
 }
+
+/*
+リンクコース確認
+ */
+.pageheader-course .courseheader-courselinklist-detail {
+    color: var(--color-text) !important;
+    width: auto !important;
+}
+
+.pageheader-course .courseheader-courselinklist-detail div {
+    color: var(--color-title-3) !important;
+    font-weight: normal !important;
+    text-align: left !important;
+    background: transparent !important;
+    border-bottom: none !important;
+}
+
+.pageheader-course .courseheader-courselinklist-detail table {
+    color: var(--color-text) !important;
+}
+
 
 /*
 フッタ
