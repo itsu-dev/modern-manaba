@@ -52,6 +52,7 @@ body[theme="dark"] {
     --color-table-border-2: #212121;
     --color-unreadcount-background: #CF6679;
     --color-default-font: #ffffff;
+    --color-link: #baddf9;
 
     color: var(--color-text) !important;
 
@@ -60,7 +61,7 @@ body[theme="dark"] {
 }
 
 body[theme="dark"] a {
-    color: #baddf9 !important;
+    color: var(--color-link) !important;
 }
 
 body[theme="dark"] .course-card-title a {

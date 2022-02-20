@@ -142,8 +142,6 @@ window.onload = () => {
         reminder.innerHTML = 'Reminders';
     }
 
-
-
     document.documentElement.style.visibility = '';
 
     // homeならヘッダを消す
@@ -156,6 +154,11 @@ window.onload = () => {
         // movieボタンの再配置
         if (document.getElementsByClassName("pageheader-course-extlink").length) {
             document.getElementsByClassName("pageheader-course-courseteacher")[0].appendChild(document.getElementsByClassName("pageheader-course-extlink")[0]);
+        }
+
+        // リンクコース確認ボタンの再配置
+        if (document.getElementsByClassName("courseheader-courselinklist").length) {
+            document.getElementsByClassName("pageheader-course-courseteacher")[0].appendChild(document.getElementsByClassName("courseheader-courselinklist")[0]);
         }
 
         // 小テスト、アンケート...のメニューバーの再配置
