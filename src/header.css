@@ -150,6 +150,17 @@ body[theme="dark"] .pagefooter {
 }
 
 /*
+プロフィールのバルーン
+*/
+.userballoonframe, .contentsballoonframe, .reactionballoon .balloonframe {
+    background-color: var(--color-card-background) !important;
+}
+
+.userballooncontent td {
+    color: var(--color-default-font) !important;
+}
+
+/*
 メインメニューバー下のヘッダ
  */
 .pageheader-course {
