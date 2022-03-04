@@ -661,6 +661,17 @@ div.form {
 }
 
 /*
+小テスト,アンケートページ(独自デザインを無効化)
+*/
+table.MsoTableGrid th {
+    background: unset !important;
+}
+
+table.MsoTableGrid tr {
+    background: unset !important;
+}
+
+/*
 小テストの採点結果
 */
 h3.querysubmitter {
