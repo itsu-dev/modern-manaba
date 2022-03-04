@@ -1,13 +1,17 @@
 {
   "name": "modern-manaba",
-  "version": "0.0.1",
-  "manifest_version": 2,
+  "version": "1.0.0",
+  "manifest_version": 3,
   "description": "Make your manaba modern.",
-  "content_security_policy": "script-src 'self' https://kit.fontawesome.com; object-src 'self'",
-  "web_accessible_resources": [
-    "images/*",
-    "options/options.html"
-  ],
+  "web_accessible_resources": [{
+    "resources": [
+      "images/*",
+      "options/options.html"
+    ],
+    "matches": [
+      "https://manaba.tsukuba.ac.jp/*"
+    ]
+  }],
   "permissions": [
     "storage"
   ],
