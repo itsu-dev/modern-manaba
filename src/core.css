@@ -698,6 +698,14 @@ table.stdlist-report tr:hover th {
     background-color: var(--color-background-main) !important;
 }
 
+div.form .report-form {
+    color: var(--color-default-font) !important;
+}
+
+div.form div.upload input {
+    color: #1b5e20 !important;
+}
+
 /*
 お知らせ
  */
