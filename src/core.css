@@ -707,6 +707,18 @@ div.form div.upload input {
 }
 
 /*
+レポート相互閲覧ページ
+*/
+.reportauthor {
+  background-color: var(--color-card-background) !important;
+}
+
+.editgrade-title {
+  color: var(--color-default-font) !important;
+  background-color: var(--color-card-background) !important;
+}
+
+/*
 お知らせ
  */
 .tpanel_frame .msg {
