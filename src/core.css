@@ -4,6 +4,8 @@ body[theme="light"] {
     --color-background-theme: #e8f5e9;
     --color-title-2: #1b5e20;
     --color-title-3: #388e3c;
+    --color-button-background: #96cd58;
+    --color-button-background-hover: #88ba50;
     --color-text-disabled: #9e9e9e;
     --color-card-shadow: #bdbdbd;
     --color-card-background: #ffffff;
@@ -35,6 +37,8 @@ body[theme="dark"] {
     --color-title-2: #dcedc8;
     --color-card-border-white: #212121;
     --color-title-3: #aed681;
+    --color-button-background: #7eac4a;
+    --color-button-background-hover: #6f9841;
     --color-text-disabled: #c1c1c1;
     --color-card-shadow: transparent;
     --color-card-background: #212121;
@@ -89,21 +93,19 @@ body[theme="dark"] table.stdlist tr.one-day-before {
     background-color: #632828 !important;
 }
 
-button, input[type="submit"] {
-    background-color: transparent !important;
+button, input[type="submit"], .manabaOriginalButton {
+    background-color: var(--color-button-background) !important;
+    background-image: none !important;
+    box-shadow: none !important;
     padding: 8px !important;
-    color: var(--color-title-3) !important;
+    color: #f0f0f0 !important;
     font-weight: normal !important;
     border: none !important;
     cursor: pointer !important;
 }
 
 button:hover {
-    background-color: var(--color-background-theme) !important;
-}
-
-input[type="submit"] {
-    background-color: var(--color-background-theme) !important;
+    background-color: var(--color-button-background-hover) !important;
 }
 
 .pagebody, .home {
@@ -896,7 +898,7 @@ div.dm-panel-inpagebody .reminder-detail-panel h2 {
 @media screen and (max-width: 1100px) {
     form .description {
         width: calc(100% / 1.2) !important;
-        margin-left: 0% !important;
+        margin-left: 0 !important;
     }
 
     .contentbody-l .navigator {
