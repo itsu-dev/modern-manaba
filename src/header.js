@@ -265,6 +265,54 @@ window.onload = () => {
         styleSheet.insertRule( 'table tr:nth-child(odd) { background: transparent !important; }', styleSheet.cssRules.length);
     }
 
+    const menuBarBase = document.createElement("div");
+    menuBarBase.id = 'menu-base';
+    document.getElementById("header").insertBefore(menuBarBase, document.getElementById("mynavi"));
+    menuBarBase.addEventListener('click', () => {
+        document.getElementById("mynavi").classList.remove('menu-open');
+        document.getElementById("menu-base").classList.remove('menu-base-open');
+        menuBarBase.style.display = "none";
+    });
+
+    const mynavi2 = document.createElement("div");
+    mynavi2.id = "mynavi2";
+    document.getElementById("header").insertBefore(mynavi2, document.getElementById("mynavi"));
+
+    const menuButton = document.createElement('button');
+    menuButton.id = "menu-button";
+    menuButton.addEventListener('click', () => {
+        if (document.getElementById("mynavi").classList.contains('menu-open')) {
+            document.getElementById("mynavi").classList.remove('menu-open');
+            document.getElementById("menu-base").classList.remove('menu-base-open');
+            menuBarBase.style.display = "none";
+        } else {
+            document.getElementById("mynavi").classList.add('menu-open');
+            document.getElementById("menu-base").classList.add('menu-base-open');
+            menuBarBase.style.display = "block";
+        }
+    });
+    mynavi2.appendChild(menuButton);
+
+    const myButtonMenu = document.getElementById("mybutton-menu");
+    const myLang = document.getElementById("mylang");
+    let isWide = window.innerWidth > 1024;
+
+    document.body.onresize = (e) => {
+        if (window.innerWidth <= 1024 && isWide) {
+            document.getElementById("mynavi").appendChild(myButtonMenu);
+            document.getElementById("mynavi").appendChild(myLang);
+            isWide = false;
+        } else if (window.innerWidth > 1024 && !isWide) {
+            document.getElementById("header").insertBefore(document.getElementById("header-common-message"), myButtonMenu);
+            document.getElementById("header").insertBefore(document.getElementById("header-common-message"), myLang);
+            isWide = true;
+        }
+    }
+
+    if (!isWide) {
+        document.getElementById("mynavi").appendChild(myButtonMenu);
+        document.getElementById("mynavi").appendChild(myLang);
+    }
 }
 
 
