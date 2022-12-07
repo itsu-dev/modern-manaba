@@ -93,7 +93,7 @@ body[theme="dark"] table.stdlist tr.one-day-before {
     background-color: #632828 !important;
 }
 
-button, input[type="submit"], .manabaOriginalButton {
+button, input[type="submit"], input[type="button"], .manabaOriginalButton {
     background-color: var(--color-button-background) !important;
     background-image: none !important;
     box-shadow: none !important;
@@ -104,7 +104,7 @@ button, input[type="submit"], .manabaOriginalButton {
     cursor: pointer !important;
 }
 
-button:hover {
+button:hover, input[type="submit"]:hover, input[type="button"]:hover, .manabaOriginalButton:hover {
     background-color: var(--color-button-background-hover) !important;
 }
 
@@ -1124,4 +1124,21 @@ div.contentbody-right table.contentspagelist tr:hover td {
 
 .pagefooter .footer-manual-link {
     left: calc((100% - 950px) / 2 + 260px) !important;
+}
+
+/* 提出取り消しダイアログ */
+#panel_modal {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#panel_frame {
+    background: var(--color-card-background) !important;
+    border-radius: 0 !important;
+    box-shadow: 2px 2px 4px var(--color-card-shadow) !important;
+    padding: 16px !important;
+}
+
+#panel_frame .confirmpanel {
+    background: var(--color-card-background) !important;
+    color: var(--color-text) !important;
 }
