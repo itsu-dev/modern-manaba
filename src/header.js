@@ -147,7 +147,7 @@ window.onload = () => {
     // homeならヘッダを消す
     const regex = new RegExp("/ct/home.*");
     if (regex.test(location.pathname)) {
-        document.getElementsByClassName("pageheader-course")[0].remove();
+        if (document.getElementsByClassName("pageheader-course")[0]) document.getElementsByClassName("pageheader-course")[0].remove();
 
     // メニューバー下のヘッダがあるなら
     } else if (document.getElementsByClassName("pageheader-course").length) {
