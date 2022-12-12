@@ -1,639 +1,686 @@
 body[theme="light"] {
-    --color-text: #1E1E1E;
-    --color-background-main: #f4f5f7;
-    --color-background-theme: #e8f5e9;
-    --color-title-2: #1b5e20;
-    --color-title-3: #388e3c;
-    --color-button-background: #96cd58;
-    --color-button-background-hover: #88ba50;
-    --color-text-disabled: #9e9e9e;
-    --color-card-shadow: #bdbdbd;
-    --color-card-background: #ffffff;
-    --color-card-border-white: #e0e0e0;
-    --color-card-background-alert: #f8bbd0;
-    --color-card-border-alert: #c48b9f;
-    --color-card-background-memo: #fff9c4;
-    --color-card-border-memo: #cbc693;
-    --color-card-border-description: #b6c2b7;
-    --color-card-contents-background: #ffffff;
-    --color-card-contents-border: #e0e0e0;
-    --color-menubar-background: #263238;
-    --color-menubar-hover: #66bb6a;
-    --color-table-grade-bar: #2e7d32;
-    --color-table-border: #bcbcbc;
-    --color-table-border-2: #bcbcbc;
-    --color-unreadcount-background: #ef5350;
-    --color-default-font: #000000;
+  --color-text: #1e1e1e;
+  --color-background-main: #f4f5f7;
+  --color-background-theme: #e8f5e9;
+  --color-title-2: #1b5e20;
+  --color-title-3: #388e3c;
+  --color-button-background: #96cd58;
+  --color-button-background-hover: #88ba50;
+  --color-text-disabled: #9e9e9e;
+  --color-card-shadow: #bdbdbd;
+  --color-card-background: #ffffff;
+  --color-card-border-white: #e0e0e0;
+  --color-card-background-alert: #f8bbd0;
+  --color-card-border-alert: #c48b9f;
+  --color-card-background-memo: #fff9c4;
+  --color-card-border-memo: #cbc693;
+  --color-card-border-description: #b6c2b7;
+  --color-card-contents-background: #ffffff;
+  --color-card-contents-border: #e0e0e0;
+  --color-menubar-background: #263238;
+  --color-menubar-hover: #66bb6a;
+  --color-table-grade-bar: #2e7d32;
+  --color-table-border: #bcbcbc;
+  --color-table-border-2: #bcbcbc;
+  --color-unreadcount-background: #ef5350;
+  --color-default-font: #000000;
 
-    color: var(--color-text) !important;
+  color: var(--color-text) !important;
 
-    background: var(--color-background-main) !important;
+  background: var(--color-background-main) !important;
 }
 
 body[theme="dark"] {
-    --color-text: #e6e6e6;
-    --color-background-main: #121212;
-    --color-background-theme: #272727;
-    --color-title-2: #dcedc8;
-    --color-card-border-white: #212121;
-    --color-title-3: #aed681;
-    --color-button-background: #7eac4a;
-    --color-button-background-hover: #6f9841;
-    --color-text-disabled: #c1c1c1;
-    --color-card-shadow: transparent;
-    --color-card-background: #212121;
-    --color-card-background-alert: #CF6679;
-    --color-card-border-alert: #CF6679;
-    --color-card-background-memo: #fff176;
-    --color-card-border-memo: #fff176;
-    --color-card-border-description: #272727;
-    --color-card-contents-background: #2c2c2c;
-    --color-card-contents-border: #2c2c2c;
-    --color-menubar-background: #272727;
-    --color-menubar-hover: #66bb6a;
-    --color-table-grade-bar: #2e7d32;
-    --color-table-border: #212121;
-    --color-table-border-2: #212121;
-    --color-unreadcount-background: #CF6679;
-    --color-default-font: #ffffff;
-    --color-link: #baddf9;
+  --color-text: #e6e6e6;
+  --color-background-main: #121212;
+  --color-background-theme: #272727;
+  --color-title-2: #dcedc8;
+  --color-card-border-white: #212121;
+  --color-title-3: #aed681;
+  --color-button-background: #7eac4a;
+  --color-button-background-hover: #6f9841;
+  --color-text-disabled: #c1c1c1;
+  --color-card-shadow: transparent;
+  --color-card-background: #212121;
+  --color-card-background-alert: #cf6679;
+  --color-card-border-alert: #cf6679;
+  --color-card-background-memo: #fff176;
+  --color-card-border-memo: #fff176;
+  --color-card-border-description: #272727;
+  --color-card-contents-background: #2c2c2c;
+  --color-card-contents-border: #2c2c2c;
+  --color-menubar-background: #272727;
+  --color-menubar-hover: #66bb6a;
+  --color-table-grade-bar: #2e7d32;
+  --color-table-border: #212121;
+  --color-table-border-2: #212121;
+  --color-unreadcount-background: #cf6679;
+  --color-default-font: #ffffff;
+  --color-link: #baddf9;
 
-    color: var(--color-text) !important;
+  color: var(--color-text) !important;
 
-    background: var(--color-background-main) !important;
-
+  background: var(--color-background-main) !important;
 }
 
 body[theme="dark"] a {
-    color: var(--color-link) !important;
+  color: var(--color-link) !important;
 }
 
 body[theme="dark"] .course-card-title a {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 body[theme="dark"] .alertlist a {
-    color: var(--color-text) !important;
+  color: var(--color-text) !important;
 }
 
 body[theme="dark"] .pagebody .section .coursecard:hover a {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
-
 body[theme="dark"] table.stdlist tr.seven-days-before {
-    background-color: #385638 !important;
+  background-color: #385638 !important;
 }
 
 body[theme="dark"] table.stdlist tr.three-days-before {
-    background-color: #636228 !important;
+  background-color: #636228 !important;
 }
 
 body[theme="dark"] table.stdlist tr.one-day-before {
-    background-color: #632828 !important;
+  background-color: #632828 !important;
 }
 
-button, input[type="submit"], input[type="button"], .manabaOriginalButton {
-    background-color: var(--color-button-background) !important;
-    background-image: none !important;
-    box-shadow: none !important;
-    padding: 8px !important;
-    color: #f0f0f0 !important;
-    font-weight: normal !important;
-    border: none !important;
-    cursor: pointer !important;
+button,
+input[type="submit"],
+input[type="button"],
+.manabaOriginalButton {
+  background-color: var(--color-button-background) !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  padding: 8px !important;
+  color: #f0f0f0 !important;
+  font-weight: normal !important;
+  border: none !important;
+  cursor: pointer !important;
 }
 
-button:hover, input[type="submit"]:hover, input[type="button"]:hover, .manabaOriginalButton:hover {
-    background-color: var(--color-button-background-hover) !important;
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.manabaOriginalButton:hover {
+  background-color: var(--color-button-background-hover) !important;
 }
 
-.pagebody, .home {
-    width: 100% !important;
+.pagebody,
+.home {
+  width: 100% !important;
 }
 
 .my-course {
-    width: 100% !important;
-    margin: 0 auto !important;
+  width: 100% !important;
+  margin: 0 auto !important;
 }
 
 .my-course::after {
-    content: "";
-    display: block;
-    clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .pagebody {
-    border: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .pagebody .section .coursecard:hover {
-    background-color: var(--color-background-main) !important;
+  background-color: var(--color-background-main) !important;
 }
 
 .contentbody-left {
-    width: 70% !important;
-    padding: 0 !important;
+  width: 70% !important;
+  padding: 0 !important;
 }
 
 .contentbody-right {
-    width: 30% !important;
-    padding: 0 !important;
+  width: 30% !important;
+  padding: 0 !important;
 }
 
 .memo0 {
-    padding: 12px !important;
-    background: var(--color-card-background-memo) !important;
-    border: var(--color-card-border-memo) solid 1px !important;
-    box-shadow: 2px 2px 4px var(--color-card-shadow);
-    margin: 16px !important;
+  padding: 12px !important;
+  background: var(--color-card-background-memo) !important;
+  border: var(--color-card-border-memo) solid 1px !important;
+  box-shadow: 2px 2px 4px var(--color-card-shadow);
+  margin: 16px !important;
 }
 
 .alertlist {
-    padding: 12px !important;
-    background: var(--color-card-background-alert) !important;
-    border: var(--color-card-border-alert) solid 1px;
-    box-shadow: 2px 2px 4px var(--color-card-shadow);
-    margin: 0 16px 16px !important;
+  padding: 12px !important;
+  background: var(--color-card-background-alert) !important;
+  border: var(--color-card-border-alert) solid 1px;
+  box-shadow: 2px 2px 4px var(--color-card-shadow);
+  margin: 0 16px 16px !important;
 }
 
-.alertlist a, .alertlist span.unread {
-    color: white !important;
-    font-weight: normal !important;
+.alertlist a,
+.alertlist span.unread {
+  color: white !important;
+  font-weight: normal !important;
 }
 
 .alertlist div {
-    margin: 0 20px 0 15px !important;
+  margin: 0 20px 0 15px !important;
 }
 
-.my-infolist, .info-list-card, .info-list-cardl, .info-list-cardr, .top-contents-list, .groupnews-msg, .contentbody-l, .contentbody-s, div.articlebody .contentbody-left, div.articlebody .contentbody-right, .pageheader-course .courseheader-courselinklist-detail {
-    padding: 12px !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-    background: var(--color-card-background) !important;
-    margin-bottom: 16px !important;
-    border: var(--color-card-border-white) solid 1px !important;
-    box-shadow: 2px 2px 4px var(--color-card-shadow) !important;
+.my-infolist,
+.info-list-card,
+.info-list-cardl,
+.info-list-cardr,
+.top-contents-list,
+.groupnews-msg,
+.contentbody-l,
+.contentbody-s,
+div.articlebody .contentbody-left,
+div.articlebody .contentbody-right,
+.pageheader-course .courseheader-courselinklist-detail {
+  padding: 12px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  background: var(--color-card-background) !important;
+  margin-bottom: 16px !important;
+  border: var(--color-card-border-white) solid 1px !important;
+  box-shadow: 2px 2px 4px var(--color-card-shadow) !important;
 }
 
-.my-infolist-header, .info-list-card-header, .top-contents-list-header {
-    background: transparent !important;
-    padding: 0 !important;
+.my-infolist-header,
+.info-list-card-header,
+.top-contents-list-header {
+  background: transparent !important;
+  padding: 0 !important;
 }
 
-.my-infolist-header h2, .info-list-card-header h2, .top-contents-list-header h2, .msg-body h2, .contentbody-l h1, .contentbody-s h1, .msg h2, div.articlebody .pagetitle {
-    color: var(--color-title-2) !important;
-    font-size: 1.8em !important;
-    font-weight: normal !important;
-    padding: 0 !important;
-    padding-bottom: 12px !important;
+.my-infolist-header h2,
+.info-list-card-header h2,
+.top-contents-list-header h2,
+.msg-body h2,
+.contentbody-l h1,
+.contentbody-s h1,
+.msg h2,
+div.articlebody .pagetitle {
+  color: var(--color-title-2) !important;
+  font-size: 1.8em !important;
+  font-weight: normal !important;
+  padding: 0 !important;
+  padding-bottom: 12px !important;
 }
 
-.my-infolist-body, .info-list-card-body, .top-contents-list-body {
-    padding: 0 !important;
-    margin: 0 !important;
-    margin-top: 12px !important;
-    border: none !important;
+.my-infolist-body,
+.info-list-card-body,
+.top-contents-list-body {
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-top: 12px !important;
+  border: none !important;
 }
 
 .pagebody .top-contents-list {
-    background-color: var(--color-card-background) !important;
+  background-color: var(--color-card-background) !important;
 }
 
-.my-infolist-centernews, .my-infolist-mycourses {
-    margin: 0 !important;
-    margin-left: 16px !important;
-    margin-right: 8px !important;
-    margin-bottom: 16px !important;
+.my-infolist-centernews,
+.my-infolist-mycourses {
+  margin: 0 !important;
+  margin-left: 16px !important;
+  margin-right: 8px !important;
+  margin-bottom: 16px !important;
 }
 
-div.news-title, .my-infolist-event td.event-title a {
-    width: auto !important;
-    overflow: unset !important;
-    white-space: normal !important;
+div.news-title,
+.my-infolist-event td.event-title a {
+  width: auto !important;
+  overflow: unset !important;
+  white-space: normal !important;
 }
 
-.my-infolist-event td, .my-infolist-event tr.bordertop td {
-    border: none !important;
+.my-infolist-event td,
+.my-infolist-event tr.bordertop td {
+  border: none !important;
 }
 
 .my-infolist-event tr td {
-    padding: 4px 0 !important;
+  padding: 4px 0 !important;
 }
 
 .my-infolist-event tr td.eventlist-day {
-    padding-right: 4px !important;
+  padding-right: 4px !important;
 }
 
 .my-infolist-event td.event-title a {
-    padding-left: 0 !important;
+  padding-left: 0 !important;
 }
 
-.my-infolist-event, .my-infolist-tips {
-    width: calc(100% - 58px) !important;
-    margin: 0 !important;
-    margin-left: 8px !important;
-    margin-right: 16px !important;
-    margin-bottom: 16px !important;
+.my-infolist-event,
+.my-infolist-tips {
+  width: calc(100% - 58px) !important;
+  margin: 0 !important;
+  margin-left: 8px !important;
+  margin-right: 16px !important;
+  margin-bottom: 16px !important;
 }
 
-.my-infolist-submitlog h3, .my-infolist-tips .tips-list h3, .contentbody-l h3 {
-    background: none !important;
-    color: var(--color-title-3) !important;
-    font-weight: normal !important;
-    padding: 0 !important;
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
+.my-infolist-submitlog h3,
+.my-infolist-tips .tips-list h3,
+.contentbody-l h3 {
+  background: none !important;
+  color: var(--color-title-3) !important;
+  font-weight: normal !important;
+  padding: 0 !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
 }
 
 .my-infolist-submitlog td.event-title a {
-    width: 100% !important;
+  width: 100% !important;
 }
 
 .my-infolist-event .showmore {
-    border: none !important;
+  border: none !important;
 }
 
 .my-infolist-tips .my-infolist-header {
-    height: 0 !important;
-    border: none !important;
+  height: 0 !important;
+  border: none !important;
 }
 
 .my-infolist-tips .my-infolist-body {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 tr.row0 {
-    background: var(--color-card-background) !important;
+  background: var(--color-card-background) !important;
 }
 
 table tr {
-    border: none !important;
+  border: none !important;
 }
 
 table tr:nth-child(even) {
-    background: var(--color-background-theme) !important;
+  background: var(--color-background-theme) !important;
 }
 
 table tr:nth-child(odd) {
-    background: var(--color-card-background) !important;
+  background: var(--color-card-background) !important;
 }
 
 table.stdlist {
-    width: 100% !important;
-    border: none !important;
+  width: 100% !important;
+  border: none !important;
 }
 
 table.stdlist tr.title th {
-    color: var(--color-title-3) !important;
-    font-weight: normal;
-!important;
-    background-color: var(--color-card-background) !important;
-    border: none !important;
+  color: var(--color-title-3) !important;
+  font-weight: normal !important;
+  background-color: var(--color-card-background) !important;
+  border: none !important;
 }
 
-table.stdlist tr td, table.stdlist tr th {
-    border-color: var(--color-table-border) !important;
-    border-style: dotted !important;
-    border-width: 1px !important;
-    border-top: none !important;
-    border-bottom: none !important;
+table.stdlist tr td,
+table.stdlist tr th {
+  border-color: var(--color-table-border) !important;
+  border-style: dotted !important;
+  border-width: 1px !important;
+  border-top: none !important;
+  border-bottom: none !important;
 }
 
 table.stdlist tr:hover td {
-    background-color: var(--color-background-main) !important;
+  background-color: var(--color-background-main) !important;
 }
 
 ul.infolist-tab {
-    margin: 0 !important;
-    margin-top: -25px !important;
-    border: none !important;
+  margin: 0 !important;
+  margin-top: -25px !important;
+  border: none !important;
 }
 
 ul.infolist-tab a {
-    margin: 5px !important;
-    padding: 0 !important;
-    border: none !important;
-    text-align: center !important;
-    color: var(--color-text-disabled) !important;
+  margin: 5px !important;
+  padding: 0 !important;
+  border: none !important;
+  text-align: center !important;
+  color: var(--color-text-disabled) !important;
 }
 
 ul.infolist-tab li.current a {
-    color: var(--color-title-2) !important;
-    background: none !important;
+  color: var(--color-title-2) !important;
+  background: none !important;
 }
 
 #container {
-    min-width: 300px !important;
+  min-width: 300px !important;
 }
 
 /*
 メインコンテンツdiv
  */
 .content-body {
-    padding: 0 !important;
-    margin: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 @media screen and (min-width: 1024px) {
-    .content-body {
-        margin: 0 20% !important;
-    }
+  .content-body {
+    margin: 0 20% !important;
+  }
 }
 
 /*
 現在、自己登録期間中...
  */
 .description {
-    box-sizing: border-box;
-    padding: 12px !important;
-    background: var(--color-background-theme) !important;
-    border: var(--color-card-border-description) solid 1px !important;
-    border-radius: 0 !important;
-    box-shadow: 2px 2px 4px var(--color-card-shadow);
-    margin: 16px !important;
+  box-sizing: border-box;
+  padding: 12px !important;
+  background: var(--color-background-theme) !important;
+  border: var(--color-card-border-description) solid 1px !important;
+  border-radius: 0 !important;
+  box-shadow: 2px 2px 4px var(--color-card-shadow);
+  margin: 16px !important;
 }
 
 /*
 コースニュース・スレッドdiv
  */
 .info-list {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-around;
-    margin: 0 0 16px 0 !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-around;
+  margin: 0 0 16px 0 !important;
 }
 
-.info-list-cardl, .info-list-cardr {
-    box-sizing: border-box;
-    width: 100% !important;
+.info-list-cardl,
+.info-list-cardr {
+  box-sizing: border-box;
+  width: 100% !important;
 }
 
 /*
 コースニュース
  */
 .info-list-cardl {
-    margin: 0 8px 0 16px !important;
+  margin: 0 8px 0 16px !important;
 }
 
 /*
 スレッド
  */
 .info-list-cardr {
-    float: left !important;
-    margin: 0 16px 0 8px !important;
+  float: left !important;
+  margin: 0 16px 0 8px !important;
 }
 
 body .articlecontainer h3.articlenumber {
-    background: var(--color-card-background) !important;
-    color: var(--color-title-2) !important;
+  background: var(--color-card-background) !important;
+  color: var(--color-title-2) !important;
 }
 
 body .articlecontainer div.articleheader {
-    background: var(--color-card-background) !important;
+  background: var(--color-card-background) !important;
 }
 
-div.articlecontainer:hover .articlebody, div.articlecontainer:hover .articleheader, div.articlecontainer:hover .articleheader .articlesubject {
-    background: var(--color-card-background) !important;
+div.articlecontainer:hover .articlebody,
+div.articlecontainer:hover .articleheader,
+div.articlecontainer:hover .articleheader .articlesubject {
+  background: var(--color-card-background) !important;
 }
 
 body div.hilitearticle {
-    background-color: var(--color-background-main) !important;
+  background-color: var(--color-background-main) !important;
 }
 
 body div.hilitearticle div.articleheader {
-    background: var(--color-background-main) !important;
+  background: var(--color-background-main) !important;
 }
 
 body div.hilitearticle div.articlebody {
-    background: var(--color-background-main) !important;
+  background: var(--color-background-main) !important;
 }
 
 body div.hilitearticle div.articleheader div.articlesubject {
-    background-color: var(--color-background-main) !important;
+  background-color: var(--color-background-main) !important;
 }
 
 .articlesubject {
-    background: var(--color-card-background) !important;
-    border-color: transparent !important;
+  background: var(--color-card-background) !important;
+  border-color: transparent !important;
 }
 
 .button-switchview {
-    background: var(--color-card-background) !important;
+  background: var(--color-card-background) !important;
 }
 
 div.navigator {
-    background: var(--color-card-background) !important;
+  background: var(--color-card-background) !important;
 }
 
-
 .contentbody-s div.navigator a {
-    background: var(--color-card-background) !important;
+  background: var(--color-card-background) !important;
 }
 
 .navigator .bbspagerlinks a {
-    border: none !important;
+  border: none !important;
 }
 
 /*
 コースニュース・スレッドの表
  */
-.groupnewslist, .groupthreadlist {
-    height: auto !important;
+.groupnewslist,
+.groupthreadlist {
+  height: auto !important;
 }
 
-.groupnewslist td, .groupnewslist th, .groupthreadlist td, .groupthreadlist th {
-    border: none !important;
+.groupnewslist td,
+.groupnewslist th,
+.groupthreadlist td,
+.groupthreadlist th {
+  border: none !important;
 }
 
-.groupnewslist td, .groupthreadlist td {
-    padding: 0 !important;
+.groupnewslist td,
+.groupthreadlist td {
+  padding: 0 !important;
 }
 
-.groupnewslist th, .groupthreadlist th {
-    padding: 2px 0 2px 20px !important;
-    width: 70% !important;
+.groupnewslist th,
+.groupthreadlist th {
+  padding: 2px 0 2px 20px !important;
+  width: 70% !important;
 }
 
-.groupnewslist, .groupthreadlist {
-    padding: 0 !important;
+.groupnewslist,
+.groupthreadlist {
+  padding: 0 !important;
 }
 
-.groupnewslist th a, .groupthreadlist th a {
-    width: auto !important;
-    white-space: normal !important;
-    overflow: unset !important;
+.groupnewslist th a,
+.groupthreadlist th a {
+  width: auto !important;
+  white-space: normal !important;
+  overflow: unset !important;
 }
 
 .no-info {
-    height: auto !important;
+  height: auto !important;
 }
 
 .project-header-s {
-    background: transparent !important;
-    border-bottom: none !important;
+  background: transparent !important;
+  border-bottom: none !important;
 }
 
 /*
 コンテンツ
  */
 .top-contents-list {
-    box-sizing: border-box !important;
-    margin: 16px !important;
+  box-sizing: border-box !important;
+  margin: 16px !important;
 }
 
 .top-contents-list-body {
-    background-color: var(--color-card-background) !important;
-    margin-top: 16px !important;
+  background-color: var(--color-card-background) !important;
+  margin-top: 16px !important;
 }
 
 .top-contents-list-footer {
-    background: white !important;
-    height: auto !important;
+  background: white !important;
+  height: auto !important;
 }
 
 /*
 コンテンツの中身のカード
 */
 .contents-card {
-    margin-bottom: 16px !important;
-    margin-right: 16px !important;
-    border: var(--color-card-contents-border) solid 1px !important;
-    box-shadow: 2px 2px 6px var(--color-card-shadow) !important;
-    background-color: var(--color-card-contents-background) !important;
+  margin-bottom: 16px !important;
+  margin-right: 16px !important;
+  border: var(--color-card-contents-border) solid 1px !important;
+  box-shadow: 2px 2px 6px var(--color-card-shadow) !important;
+  background-color: var(--color-card-contents-background) !important;
 }
 
 /*
 コンテンツ一覧の表
  */
 table.contentslist .info-contents {
-    background-color: unset !important;
+  background-color: unset !important;
 }
 
-table.contentslist th, table.contentslist td, table.contentslist {
-    border: none !important;
+table.contentslist th,
+table.contentslist td,
+table.contentslist {
+  border: none !important;
 }
 
 table.contentslist tr:hover th {
-    background-color: var(--color-background-main) !important;
+  background-color: var(--color-background-main) !important;
 }
 
-table.contentslist tr.hilitecolor td, table.contentslist tr.hilitecolor .info-contents, table.contentslist tr.hilitecolor th {
-    background-color: var(--color-background-main) !important;
+table.contentslist tr.hilitecolor td,
+table.contentslist tr.hilitecolor .info-contents,
+table.contentslist tr.hilitecolor th {
+  background-color: var(--color-background-main) !important;
 }
 
-table.stdlist tr.hilitecolor td, table.stdlist tr.hilitecolor th {
-    background-color: var(--color-background-main) !important;
+table.stdlist tr.hilitecolor td,
+table.stdlist tr.hilitecolor th {
+  background-color: var(--color-background-main) !important;
 }
 
 /*
 （共通）カード右下の○○一覧
  */
 .showmore {
-    background: var(--color-card-background) !important;
-    padding: 4px 0 0 !important;
+  background: var(--color-card-background) !important;
+  padding: 4px 0 0 !important;
 }
 
 .memobutton {
-    padding-right: 16px !important;
+  padding-right: 16px !important;
 }
 
 /*
 コースニュース
  */
 .groupnews-msg {
-    border-radius: 0 !important;
-    width: 100% !important;
-    margin: 0 auto 16px !important;
-    background: var(--color-background-theme) !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+  margin: 0 auto 16px !important;
+  background: var(--color-background-theme) !important;
 }
 
 .msg-body {
-    padding: 16px !important;
-    margin: 0 !important;
-    border: none !important;
-    background: var(--color-background-theme) !important;
+  padding: 16px !important;
+  margin: 0 !important;
+  border: none !important;
+  background: var(--color-background-theme) !important;
 }
 
 .msg-title {
-    padding: 0 !important;
-    border-bottom: none !important;
+  padding: 0 !important;
+  border-bottom: none !important;
 }
 
 .msg-title h2 {
-    color: var(--color-title-2) !important;
-    font-size: 1.3em !important;
-    font-weight: normal !important;
-    padding: 0 !important;
-    padding-bottom: 12px !important;
-    width: auto !important;
-    float: unset !important;
+  color: var(--color-title-2) !important;
+  font-size: 1.3em !important;
+  font-weight: normal !important;
+  padding: 0 !important;
+  padding-bottom: 12px !important;
+  width: auto !important;
+  float: unset !important;
 }
 
 span.msg-date {
-    float: unset !important;
-    width: auto !important;
-    padding: 0 !important;
+  float: unset !important;
+  width: auto !important;
+  padding: 0 !important;
 }
 
 .msg-info {
-    border-bottom: none !important;
+  border-bottom: none !important;
 }
 
 span.msg-info-caption {
-    background: transparent !important;
-    color: var(--color-title-3) !important;
-    padding: 0 !important;
-    width: auto !important;
+  background: transparent !important;
+  color: var(--color-title-3) !important;
+  padding: 0 !important;
+  width: auto !important;
 }
 
 .msg-text {
-    padding: 16px 0 0 !important;
+  padding: 16px 0 0 !important;
 }
 
 /*
 小テスト、アンケート、レポート、プロジェクト、成績など
  */
 .contentbody-l {
-    /* 本当はレスポンシブにしたいけどコースニュースが
+  /* 本当はレスポンシブにしたいけどコースニュースが
     662pxで!importantを張っている**仕様なため、仕方なくそれに合わせた */
-    width: 662px !important;
-    padding: 16px !important;
-    margin: 16px auto 16px !important;
+  width: 662px !important;
+  padding: 16px !important;
+  margin: 16px auto 16px !important;
 }
 
 .contentbody-l h1 {
-    margin: 0 !important;
-    border: none !important;
+  margin: 0 !important;
+  border: none !important;
 }
 
 .contentbody-l .description {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
 .contentbody-footer {
-    margin-bottom: 0 !important;
-    padding: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
 }
 
 table.stdlist-reportV2 tr.row1 {
-    background-color: unset;
+  background-color: unset;
 }
 
 div.form {
-    border: none !important;
-    background-color: #f5f5f5 !important;
-
+  border: none !important;
+  background-color: #f5f5f5 !important;
 }
 
 .contentbody-s {
-    margin-top: 16px !important;
+  margin-top: 16px !important;
 }
 
 .contentbody-s h1 {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 /*
@@ -641,71 +688,72 @@ div.form {
 */
 
 .contentbody-s div.form {
-    background: var(--color-card-background) !important;
+  background: var(--color-card-background) !important;
 }
 
 .contentbody-s input[type="submit"] {
-    color: var(--color-default-font) !important;
-    background: var(--color-background-main) !important;
+  color: var(--color-default-font) !important;
+  background: var(--color-background-main) !important;
 }
 
 .contentbody-s input[type="submit"]:hover {
-    background: var(--color-background-theme) !important;
+  background: var(--color-background-theme) !important;
 }
 
 .reporttext-title {
-    background: var(--color-card-background) !important;
-    color: var(--color-title-2) !important;
+  background: var(--color-card-background) !important;
+  color: var(--color-title-2) !important;
 }
 
 .reporttext-body {
-    background: var(--color-card-background) !important;
+  background: var(--color-card-background) !important;
 }
 
 /*
 小テスト,アンケートページ(独自デザインを無効化)
 */
 table.MsoTableGrid th {
-    background: unset !important;
+  background: unset !important;
 }
 
 table.MsoTableGrid tr {
-    background: unset !important;
+  background: unset !important;
 }
 
 /*
 小テストの採点結果
 */
 h3.querysubmitter {
-    background-color: var(--color-card-background) !important;
-    color: var(--color-title-2) !important;
+  background-color: var(--color-card-background) !important;
+  color: var(--color-title-2) !important;
 }
 
 span.queryanswerspan {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 /*
 レポート提出ページ
 */
 .contentbody-l div.form {
-    background: var(--color-card-background) !important;
+  background: var(--color-card-background) !important;
 }
 
-.textarea-char-counter, .textarea-word-counter {
-    color: var(--color-default-font) !important;
+.textarea-char-counter,
+.textarea-word-counter {
+  color: var(--color-default-font) !important;
 }
 
 table.stdlist-report tr:hover th {
-    background-color: var(--color-background-main) !important;
+  background-color: var(--color-background-main) !important;
 }
 
 div.form .report-form {
-    color: var(--color-default-font) !important;
+  color: var(--color-default-font) !important;
 }
 
 div.form div.upload input {
-    color: #1b5e20 !important;
+  color: #1b5e20 !important;
 }
 
 /*
@@ -724,421 +772,431 @@ div.form div.upload input {
 お知らせ
  */
 .tpanel_frame .msg {
-    background-color: white !important;
-    border-radius: unset !important;
-    padding: 0 !important;
+  background-color: white !important;
+  border-radius: unset !important;
+  padding: 0 !important;
 }
 
 .msg-footer {
-    display: none !important;
-    height: 0 !important;
+  display: none !important;
+  height: 0 !important;
 }
 
 .tpanel_frame .msg-body {
-    background-color: white !important;
+  background-color: white !important;
 }
 
 /*
 成績の表
  */
 table.gradelist .grade {
-    background-color: unset !important;
-    color: var(--color-title-2) !important;
-    font-weight: normal !important;
+  background-color: unset !important;
+  color: var(--color-title-2) !important;
+  font-weight: normal !important;
 }
 
 table.gradelist td.borderbottom {
-    border-color: var(--color-table-border) !important;
-    border-bottom: none !important;
+  border-color: var(--color-table-border) !important;
+  border-bottom: none !important;
 }
 
 /*
 成績順位のバー
  */
 table.gradelist td.gradebar {
-    background: var(--color-table-grade-bar) !important;
-    border: none !important;
+  background: var(--color-table-grade-bar) !important;
+  border: none !important;
 }
 
 /*
 成績の公開日時
  */
 div.dates {
-    color: var(--color-text-disabled) !important;
+  color: var(--color-text-disabled) !important;
 }
 
 /*
 ポートフォリオ
 */
 .pagebody .contentbody-s h1 {
-    border: none !important;
+  border: none !important;
 }
 
 .collist .collist-year h2 {
-    padding-left: 0 !important;
+  padding-left: 0 !important;
 }
 
 .collist-year-box {
-    border-color: var(--color-table-border-2) !important;
+  border-color: var(--color-table-border-2) !important;
 }
 
 .collist-course .collist-courseinfo {
-    border-color: var(--color-table-border-2) !important;
+  border-color: var(--color-table-border-2) !important;
 }
 
 span.collyear-open {
-    background-image: none !important;
+  background-image: none !important;
 }
 
 .collist-year {
-    background-image: none !important;
-    background-color: var(--color-card-background) !important;
-    border: solid !important;
-    border-color: var(--color-table-border-2) !important;
-    border-width: 2px !important;
-    width: auto !important;
+  background-image: none !important;
+  background-color: var(--color-card-background) !important;
+  border: solid !important;
+  border-color: var(--color-table-border-2) !important;
+  border-width: 2px !important;
+  width: auto !important;
 }
 
-.collist-year h2, .collist-course-teacher, .colllist-coursedata-info {
-    color: var(--color-title-2) !important;
+.collist-year h2,
+.collist-course-teacher,
+.colllist-coursedata-info {
+  color: var(--color-title-2) !important;
 }
 
 .collist-courseinfo {
-    background-color: var(--color-card-background) !important;
+  background-color: var(--color-card-background) !important;
 }
 
 .collist tr:hover td {
-    background-color: var(--color-background-main) !important;
+  background-color: var(--color-background-main) !important;
 }
 
-td.colltitle, td.colldate, td.collcomment, td.colllink-right {
-    border-color: var(--color-table-border-2) !important;
+td.colltitle,
+td.colldate,
+td.collcomment,
+td.colllink-right {
+  border-color: var(--color-table-border-2) !important;
 }
 
 /*
 リマインダ
 */
 td input[type="submit"] {
-    margin-left: 16px !important;
-    color: var(--color-default-font) !important;
-    background: var(--color-card-background) !important;
-    box-shadow: 2px 2px 4px var(--color-card-shadow) !important;
+  margin-left: 16px !important;
+  color: var(--color-default-font) !important;
+  background: var(--color-card-background) !important;
+  box-shadow: 2px 2px 4px var(--color-card-shadow) !important;
 }
 
 td input[type="submit"]:hover {
-    background: var(--color-background-main) !important;
+  background: var(--color-background-main) !important;
 }
 
 .contentbody-l .navigator {
-    font-size: 1.0em !important;
-    background: var(--color-card-background) !important;
-    border: 1px solid var(--color-table-border) !important;
-    box-shadow: 2px 2px 4px var(--color-card-shadow) !important;
-    padding-bottom: 5px !important;
-    margin-top: 11px !important;
-    margin-bottom: 11px !important;
+  font-size: 1em !important;
+  background: var(--color-card-background) !important;
+  border: 1px solid var(--color-table-border) !important;
+  box-shadow: 2px 2px 4px var(--color-card-shadow) !important;
+  padding-bottom: 5px !important;
+  margin-top: 11px !important;
+  margin-bottom: 11px !important;
 }
 
 .contentbody-l .navigator a {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 .contentbody-l .navigator .pager-now {
-    background: transparent !important;
-    color: var(--color-default-font) !important;
+  background: transparent !important;
+  color: var(--color-default-font) !important;
 }
 
 form .description {
-    box-sizing: border-box;
-    background: var(--color-card-background) !important;
-    padding: 12px !important;
-    border: var(--color-table-border) solid 1px !important;
-    border-radius: 0 !important;
-    box-shadow: 2px 2px 4px var(--color-card-shadow);
-    margin: 16px !important;
+  box-sizing: border-box;
+  background: var(--color-card-background) !important;
+  padding: 12px !important;
+  border: var(--color-table-border) solid 1px !important;
+  border-radius: 0 !important;
+  box-shadow: 2px 2px 4px var(--color-card-shadow);
+  margin: 16px !important;
 }
 
 /*
 リマインダやプロジェクトページのポップアップ
 */
-.dm-panel-inpagebody .msg, .dm-panel-body, .dm-panel-footer, .tpanel_frame .msg-body {
-    background: var(--color-card-background) !important;
+.dm-panel-inpagebody .msg,
+.dm-panel-body,
+.dm-panel-footer,
+.tpanel_frame .msg-body {
+  background: var(--color-card-background) !important;
 }
 
 div.dm-panel-inpagebody .reminder-detail-panel h2 {
-    padding: 16px 16px 0 !important;
+  padding: 16px 16px 0 !important;
 }
 
 /*
 リマインダポップアップの送信先
  */
 .reminder-detail-panel h3.reminder-detail-panel-to {
-    padding: 0 16px !important;
+  padding: 0 16px !important;
 }
 
 /*
 リマインダポップアップの送信日時
  */
 .reminder-detail-send {
-    position: relative !important;
-    right: unset !important;
-    top: unset !important;
-    text-align: right !important;
-    padding-right: 16px !important;
-    padding-bottom: 16px !important;
+  position: relative !important;
+  right: unset !important;
+  top: unset !important;
+  text-align: right !important;
+  padding-right: 16px !important;
+  padding-bottom: 16px !important;
 }
 
 /*
 リマインダポップアップのテキスト
  */
 .dm-panel .dm-panel-body {
-    padding: 16px !important;
+  padding: 16px !important;
 }
 
 @media screen and (max-width: 1100px) {
-    form .description {
-        width: calc(100% / 1.2) !important;
-        margin-left: 0 !important;
-    }
+  form .description {
+    width: calc(100% / 1.2) !important;
+    margin-left: 0 !important;
+  }
 
-    .contentbody-l .navigator {
-        width: calc(100% / 1.5) !important;
-    }
+  .contentbody-l .navigator {
+    width: calc(100% / 1.5) !important;
+  }
 }
 
 /*
 コンテンツ詳細ページ
  */
 div.contents {
-    padding-top: 4px !important;
-    margin-top: 0 !important;
+  padding-top: 4px !important;
+  margin-top: 0 !important;
 }
 
 /*
 コンテンツヘッダ
  */
 .contents .contentsheader .contentsheader-about-contents-2 {
-    background: transparent !important;
-    margin: 0 0 16px 0 !important;
+  background: transparent !important;
+  margin: 0 0 16px 0 !important;
 }
 
 .contents .contentsheader {
-    background-color: transparent !important;
-    border: none !important;
+  background-color: transparent !important;
+  border: none !important;
 }
 
 /*
 コンテンツタイトル
  */
 .contents .contentsheader .contentsheader-about-contents-2 h1 {
-    padding: 14px 0 4px 95px !important;
-    margin: 0 !important;
-    color: var(--color-title-2) !important;
-    width: auto !important;
+  padding: 14px 0 4px 95px !important;
+  margin: 0 !important;
+  color: var(--color-title-2) !important;
+  width: auto !important;
 }
 
 h1.contents a {
-    text-decoration: var(--color-title-2) !important;
-    color: var(--color-title-2) !important;
-    font-size: 1.2em !important;
-    font-weight: normal !important;
+  text-decoration: var(--color-title-2) !important;
+  color: var(--color-title-2) !important;
+  font-size: 1.2em !important;
+  font-weight: normal !important;
 }
 
 /*
 コンテンツ更新日時
  */
 .contents .contentsheader .contents-modtime {
-    bottom: unset !important;
-    position: relative !important;
-    right: unset !important;
-    width: auto !important;
-    padding-left: 95px !important;
+  bottom: unset !important;
+  position: relative !important;
+  right: unset !important;
+  width: auto !important;
+  padding-left: 95px !important;
 }
 
 /*
 コンテンツアイコン
  */
 .contents .contentsheader .contentsheader-about-contents-2 .contents-icon {
-    left: 34px !important;
-    top: 12px !important;
+  left: 34px !important;
+  top: 12px !important;
 }
 
 /*
 コンテンツボディ
  */
 div.contents .articlebody {
-    box-sizing: border-box !important;
-    margin: 0 16px 16px !important;
+  box-sizing: border-box !important;
+  margin: 0 16px 16px !important;
 }
 
-div.articlebody .contentbody-left, div.articlebody .contentbody-right {
-    box-sizing: border-box !important;
-    padding: 16px !important;
+div.articlebody .contentbody-left,
+div.articlebody .contentbody-right {
+  box-sizing: border-box !important;
+  padding: 16px !important;
 }
 
 div.articlebody .contentbody-left {
-    margin-right: 8px !important;
-    width: calc(70% - 16px) !important;
+  margin-right: 8px !important;
+  width: calc(70% - 16px) !important;
 }
 
 div.articlebody .contentbody-right {
-    padding-top: 12px !important;
-    margin-left: 8px !important;
+  padding-top: 12px !important;
+  margin-left: 8px !important;
 }
 
 /*
 内容のタイトル
  */
 div.contentbody-left h1.pagetitle {
-    border: none !important;
-    margin-bottom: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+  border: none !important;
+  margin-bottom: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 /*
 コンテンツ内容
  */
 div.GRIread {
-    border: none !important;
-    margin: 16px 0 !important;
+  border: none !important;
+  margin: 16px 0 !important;
 }
 
 div.contents .articletext {
-    width: 100% !important;
-    padding: 0 !important;
+  width: 100% !important;
+  padding: 0 !important;
 }
 
-.articlebody h1, .articletext h1 {
-    background: none !important;
-    color: var(--color-title-3) !important;
-    font-size: 1.15em !important;
-    font-weight: normal !important;
-    padding-left: 0 !important;
+.articlebody h1,
+.articletext h1 {
+  background: none !important;
+  color: var(--color-title-3) !important;
+  font-size: 1.15em !important;
+  font-weight: normal !important;
+  padding-left: 0 !important;
 }
 
 div.contents .articletext {
-    color: var(--color-text) !important;
+  color: var(--color-text) !important;
 }
 
 /*
 コンテンツフッタ
  */
 .contents .articleauthorV2 {
-    padding: 0 !important;
-    margin: 0 !important;
-    border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
 }
 
 .contents .articleauthorV2 .contentpage-navi {
-    background-color: transparent !important;
-    text-align: left !important;
-    color: unset !important;
-    padding: 16px 0 0 !important;
+  background-color: transparent !important;
+  text-align: left !important;
+  color: unset !important;
+  padding: 16px 0 0 !important;
 }
 
 a.topagetop img {
-    display: none !important;
+  display: none !important;
 }
 
 /*
 コンテンツ下のメモボタン
  */
 div.pagememo .memobutton {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 /*
 「コメントを書く」ボタン
  */
 .bt-bottom {
-    width: auto !important;
+  width: auto !important;
 }
 
 /*
 コンテンツ右側のリスト
  */
-.articleindex, .contents .articleindex {
-    box-shadow: none !important;
+.articleindex,
+.contents .articleindex {
+  box-shadow: none !important;
 }
 
 .articleindex .contentspagelist th {
-    padding: 4px 0 8px 27px !important;
+  padding: 4px 0 8px 27px !important;
 }
 
 td.left ul.contentslist li.current {
-    background-color: unset !important;
+  background-color: unset !important;
 }
 
 .articlebody ul {
-    padding-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 div.contentbody-right table.contentspagelist tr td {
-    border: none !important;
+  border: none !important;
 }
 
 table.contentspagelist tr:nth-child(2n) {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 div.contentbody-right table.contentspagelist tr:hover td {
-    background-color: unset !important;
+  background-color: unset !important;
 }
 
 /*
 リンクコース確認
  */
 .pageheader-course .courseheader-courselinklist-detail {
-    color: var(--color-text) !important;
-    width: auto !important;
+  color: var(--color-text) !important;
+  width: auto !important;
 }
 
 .pageheader-course .courseheader-courselinklist-detail div {
-    color: var(--color-title-3) !important;
-    font-weight: normal !important;
-    text-align: left !important;
-    background: transparent !important;
-    border-bottom: none !important;
+  color: var(--color-title-3) !important;
+  font-weight: normal !important;
+  text-align: left !important;
+  background: transparent !important;
+  border-bottom: none !important;
 }
 
 .pageheader-course .courseheader-courselinklist-detail table {
-    color: var(--color-text) !important;
+  color: var(--color-text) !important;
 }
-
 
 /*
 フッタ
 */
 .pagefooter {
-    background-color: var(--color-background-main) !important;
-    background-position: center !important;
-    box-shadow: 0 5px 2px -3px #dbdbdb inset;
-    width: 100% !important;
-    margin: 0 auto 0 !important;
+  background-color: var(--color-background-main) !important;
+  background-position: center !important;
+  box-shadow: 0 5px 2px -3px #dbdbdb inset;
+  width: 100% !important;
+  margin: 0 auto 0 !important;
 }
 
 .pagefooter #systemversion {
-    left: calc((100% - 950px) / 2) !important;
+  left: calc((100% - 950px) / 2) !important;
 }
 
 .pagefooter .footer-manual-link {
-    left: calc((100% - 950px) / 2 + 260px) !important;
+  left: calc((100% - 950px) / 2 + 260px) !important;
 }
 
 /* 提出取り消しダイアログ */
 #panel_modal {
-    background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 #panel_frame {
-    background: var(--color-card-background) !important;
-    border-radius: 0 !important;
-    box-shadow: 2px 2px 4px var(--color-card-shadow) !important;
-    padding: 16px !important;
+  background: var(--color-card-background) !important;
+  border-radius: 0 !important;
+  box-shadow: 2px 2px 4px var(--color-card-shadow) !important;
+  padding: 16px !important;
 }
 
 #panel_frame .confirmpanel {
-    background: var(--color-card-background) !important;
-    color: var(--color-text) !important;
+  background: var(--color-card-background) !important;
+  color: var(--color-text) !important;
 }
