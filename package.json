@@ -4,4 +4,10 @@
   "repository": "https://github.com/itsu-dev/modern-manaba.git",
   "author": "Itsu",
   "license": "GPL-3.0",
+  "scripts": {
+    "format": "yarn prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "2.8.1"
+  }
 }
