@@ -3,34 +3,23 @@
   "version": "1.1.1",
   "manifest_version": 3,
   "description": "Make your manaba modern.",
-  "web_accessible_resources": [{
-    "resources": [
-      "images/*",
-      "options/options.html"
-    ],
-    "matches": [
-      "https://manaba.tsukuba.ac.jp/*"
-    ]
-  }],
-  "permissions": [
-    "storage"
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*", "options/options.html"],
+      "matches": ["https://manaba.tsukuba.ac.jp/*"]
+    }
   ],
+  "permissions": ["storage"],
   "options_page": "options/options.html",
   "content_scripts": [
     {
-      "matches": [
-        "https://manaba.tsukuba.ac.jp/ct/*"
-      ],
+      "matches": ["https://manaba.tsukuba.ac.jp/ct/*"],
       "exclude_matches": [
         "https://manaba.tsukuba.ac.jp/ct/usermemo_*",
         "https://manaba.tsukuba.ac.jp/ct/doc_student"
       ],
-      "js": [
-        "header.js"
-      ],
-      "css": [
-        "header.css"
-      ],
+      "js": ["header.js"],
+      "css": ["header.css"],
       "run_at": "document_start"
     },
     {
@@ -42,11 +31,8 @@
       "exclude_matches": [
         "https://manaba.tsukuba.ac.jp/ct/course_*_project_*_teamtop_*"
       ],
-      "css": [
-        "core.css"
-      ],
+      "css": ["core.css"],
       "run_at": "document_start"
     }
   ]
 }
-
