@@ -5,7 +5,10 @@
   "author": "Itsu",
   "license": "GPL-3.0",
   "scripts": {
-    "format": "yarn prettier --write ."
+    "lint": "yarn eslint .",
+    "lint:fix": "yarn eslint . --fix",
+    "format": "yarn prettier --write .",
+    "format:check": "yarn prettier --check ."
   },
   "devDependencies": {
     "eslint": "^8.29.0",
