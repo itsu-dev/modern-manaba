@@ -8,6 +8,7 @@
     "format": "yarn prettier --write ."
   },
   "devDependencies": {
+    "eslint": "^8.29.0",
     "prettier": "2.8.1"
   }
 }
