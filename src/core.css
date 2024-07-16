@@ -1212,3 +1212,28 @@ div.contentbody-right table.contentspagelist tr:hover td {
   height: auto;
   float: unset !important;
 }
+
+/* iroduku-manaba 対応 */
+body[theme="dark"] table.stdlist > tbody > tr:is(.row0, .row1).one-day-left {
+    background-color: #cf6679 !important;
+}
+
+body[theme="dark"] table.stdlist > tbody > tr:is(.row0, .row1).one-day-left.row1 {
+    background-color: #DA8A99 !important;
+}
+
+body[theme="dark"] table.stdlist > tbody > tr:is(.row0, .row1).three-days-left {
+    background-color: #fff176 !important;
+}
+
+body[theme="dark"] table.stdlist > tbody > tr:is(.row0, .row1).three-days-left.row1 {
+    background-color: #FFF4A8 !important;
+}
+
+body[theme="dark"] table.stdlist > tbody > tr:is(.row0, .row1).seven-days-left {
+    background-color: #7eac4a !important;
+}
+
+body[theme="dark"] table.stdlist > tbody > tr:is(.row0, .row1).seven-days-left.row1 {
+    background-color: #96BD6A !important;
+}
