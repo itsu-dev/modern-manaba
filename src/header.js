@@ -32,7 +32,7 @@ window.onload = () => {
     optionsA.innerHTML = "Modern manaba";
     optionsA.setAttribute("rel", "noopener noreferer");
     optionsA.setAttribute("style", "cursor: pointer;");
-    optionsA.setAttribute("target", "_blank");
+    //optionsA.setAttribute("target", "_blank");
     options.appendChild(optionsA);
     document
       .getElementById("mylinks")
