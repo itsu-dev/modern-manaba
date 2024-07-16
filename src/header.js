@@ -18,10 +18,10 @@ const openSettings = () => {
 
 window.onload = () => {
   // オプションページから設定を読み込む
-  // chrome.storage.sync.get(defaults, function (items) {
-  //   document.body.setAttribute("theme", "light");
-  //   if (items.darkmode) document.body.setAttribute("theme", "dark");
-  // });
+  chrome.storage.sync.get(defaults, function (items) {
+    document.body.setAttribute("theme", "light");
+    if (items.darkmode) document.body.setAttribute("theme", "dark");
+  });
 
   // オプションページへのリンクを挿入
   if (document.getElementById("mylinks")) {

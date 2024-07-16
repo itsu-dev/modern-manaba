@@ -128,6 +128,12 @@ input[type="button"]:hover,
   clear: both;
 }
 
+#coursememo {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
 .pagebody {
   border: none !important;
   margin: 0 !important;
@@ -1199,4 +1205,10 @@ div.contentbody-right table.contentspagelist tr:hover td {
 #panel_frame .confirmpanel {
   background: var(--color-card-background) !important;
   color: var(--color-text) !important;
+}
+
+/* manaba プリン対応 「プリンの雨」ボタン*/
+#coursememo .button {
+  height: auto;
+  float: unset !important;
 }
