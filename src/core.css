@@ -1237,3 +1237,9 @@ body[theme="dark"] table.stdlist > tbody > tr:is(.row0, .row1).seven-days-left {
 body[theme="dark"] table.stdlist > tbody > tr:is(.row0, .row1).seven-days-left.row1 {
     background-color: #96BD6A !important;
 }
+
+/* m-timetable 対応 */
+.contentbody-left > #m-timetable {
+  width: calc(100% - 24px);
+  margin-right: 10px;
+}

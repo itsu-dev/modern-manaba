@@ -33,6 +33,6 @@
       ],
       "css": ["core.css"],
       "run_at": "document_start"
-    }
+    },
   ]
 }

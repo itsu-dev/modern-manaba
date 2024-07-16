@@ -435,4 +435,13 @@ window.onload = () => {
     document.getElementById("mynavi").appendChild(myButtonMenu);
     document.getElementById("mynavi").appendChild(myLang);
   }
+
+  // m-timetable 対応
+  setTimeout(() => {
+    const timetable = document.getElementById("m-timetable");
+    if (timetable) {
+      const after = document.querySelector(".my-infolist-centernews");
+      after.insertAdjacentElement("afterend", timetable);
+    }
+  }, 200);
 };
